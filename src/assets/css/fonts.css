@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Dosis";
+  src: url("/src/assets/fonts/dosis/Dosis-Medium.eot");
+  src: url("/src/assets/fonts/dosis/Dosis-Medium.eot") format("embedded-opentype"), url("/src/assets/fonts/dosis/Dosis-Medium.woff2"), url("/src/assets/fonts/dosis/Dosis-Medium.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.DosisFont {
+  font-family: Dosis;
+}
+@font-face {
+  font-family: "Gandom";
+  src: url("/src/assets/fonts/gandom/Gandom-FD.eot");
+  src: url("/src/assets/fonts/gandom/Gandom-FD.eot") format("embedded-opentype"), url("/src/assets/fonts/gandom/Gandom-FD.ttf"), url("/src/assets/fonts/gandom/Gandom-FD.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.GandomFont {
+  font-family: Gandom;
+}

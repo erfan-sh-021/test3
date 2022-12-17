@@ -1,0 +1,64 @@
+.SideBarOpen {
+  height: 100% !important;
+  width: 100% !important;
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  background: var(--White);
+  z-index: 3;
+  transition: all 100ms ease;
+}
+.SideBarClosed {
+  height: 100% !important;
+  width: 0% !important;
+  position: fixed !important;
+  top: 0;
+  z-index: 1;
+  right: 0;
+  background: var(--White);
+  transition: all 100ms ease;
+}
+.DeviceHeaderandContentContainert {
+  width: 100% !important;
+  position: absolute;
+  height: 100%;
+  z-index: 2;
+}
+
+.DeviceLayoutSideBarFooterContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100% !important;
+}
+.DeviceLayoutContainer {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+.DeviceSidebarTitleImage {
+  object-fit: contain;
+  height: 100%;
+  background: var(--LightToSecondaryGradient);
+  width: 50px;
+}
+.HeaderPlacings {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  align-content: center;
+}
+.MenuCloseButton {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.DeviceHeaderBarCss {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 50px;
+}

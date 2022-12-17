@@ -1,0 +1,789 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?i4bcj8');
+  src:  url('fonts/icomoon.eot?i4bcj8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?i4bcj8') format('truetype'),
+    url('fonts/icomoon.woff?i4bcj8') format('woff'),
+    url('fonts/icomoon.svg?i4bcj8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-point-of-service:before {
+  content: "\e9fb";
+}
+.icon-internetbanking:before {
+  content: "\e9fc";
+}
+.icon-menu:before {
+  content: "\e9fd";
+}
+.icon-mirror:before {
+  content: "\e92c";
+}
+.icon-SaveButton:before {
+  content: "\e9fa";
+}
+.icon-trash:before {
+  content: "\e9f8";
+}
+.icon-pencil:before {
+  content: "\e9f9";
+}
+.icon-cleaningservices:before {
+  content: "\e9b7";
+}
+.icon-cloud:before {
+  content: "\e9b8";
+}
+.icon-CloudDisconnected:before {
+  content: "\e9b9";
+}
+.icon-DoorOff:before {
+  content: "\e9ba";
+}
+.icon-DoorOn:before {
+  content: "\e9bb";
+}
+.icon-FaceDetection:before {
+  content: "\e9bc";
+}
+.icon-fan:before {
+  content: "\e9bd";
+}
+.icon-FanSpeed1:before {
+  content: "\e9be";
+}
+.icon-FanSpeed2:before {
+  content: "\e9bf";
+}
+.icon-FanSpeed3:before {
+  content: "\e9c0";
+}
+.icon-FanSpeedOff:before {
+  content: "\e9c1";
+}
+.icon-GarageOff:before {
+  content: "\e9c2";
+}
+.icon-GarageOn:before {
+  content: "\e9c3";
+}
+.icon-GardenOff:before {
+  content: "\e9c4";
+}
+.icon-GardenOn:before {
+  content: "\e9c5";
+}
+.icon-HeatingOff:before {
+  content: "\e9c6";
+}
+.icon-HeatingOffOutlined:before {
+  content: "\e9c7";
+}
+.icon-HeatingOn:before {
+  content: "\e9c8";
+}
+.icon-HomeAppliances:before {
+  content: "\e9c9";
+}
+.icon-HomeAutomation:before {
+  content: "\e9ca";
+}
+.icon-house:before {
+  content: "\e9cb";
+}
+.icon-humidity:before {
+  content: "\e9cc";
+}
+.icon-LightBulbOffOutlined:before {
+  content: "\e9cd";
+}
+.icon-LightsOff:before {
+  content: "\e9ce";
+}
+.icon-LightsOn:before {
+  content: "\e9cf";
+}
+.icon-luggageservices:before {
+  content: "\e9d0";
+}
+.icon-MainMenu:before {
+  content: "\e9d1";
+}
+.icon-management:before {
+  content: "\e9d2";
+}
+.icon-medicaldervicesvard:before {
+  content: "\e9d3";
+}
+.icon-MirrorIcon:before {
+  content: "\e9d4";
+}
+.icon-ModeAuto:before {
+  content: "\e9d5";
+}
+.icon-ModeCold:before {
+  content: "\e9d6";
+}
+.icon-ModeWarm:before {
+  content: "\e9d7";
+}
+.icon-ModeWind:before {
+  content: "\e9d8";
+}
+.icon-nachos:before {
+  content: "\e9d9";
+}
+.icon-PardikHouse:before {
+  content: "\e9da";
+}
+.icon-RGBLighBulb:before {
+  content: "\e9db";
+}
+.icon-sandals-F1:before {
+  content: "\e9dc";
+}
+.icon-sandals-M1:before {
+  content: "\e9dd";
+}
+.icon-saturation:before {
+  content: "\e9de";
+}
+.icon-SecurityOff:before {
+  content: "\e9df";
+}
+.icon-SecurityOn:before {
+  content: "\e9e0";
+}
+.icon-Settingsfilled:before {
+  content: "\e9e1";
+}
+.icon-shoe-11:before {
+  content: "\e9e2";
+}
+.icon-smart-home:before {
+  content: "\e9e3";
+}
+.icon-sneakers-21:before {
+  content: "\e9e4";
+}
+.icon-sneakers-31:before {
+  content: "\e9e5";
+}
+.icon-star:before {
+  content: "\e9e6";
+}
+.icon-Statistic:before {
+  content: "\e9e7";
+}
+.icon-technical-support:before {
+  content: "\e9e8";
+}
+.icon-technicalsupportcard:before {
+  content: "\e9e9";
+}
+.icon-towel:before {
+  content: "\e9ea";
+}
+.icon-UnderfloorHeating:before {
+  content: "\e9eb";
+}
+.icon-WifiDisconnected:before {
+  content: "\e9ec";
+}
+.icon-add:before {
+  content: "\e9ed";
+}
+.icon-airconditionerOff:before {
+  content: "\e9ee";
+}
+.icon-airconditionerOn:before {
+  content: "\e9ef";
+}
+.icon-AppsAdd:before {
+  content: "\e9f0";
+}
+.icon-Astrology:before {
+  content: "\e9f1";
+}
+.icon-bathingmaterial:before {
+  content: "\e9f2";
+}
+.icon-beddingsheetscard:before {
+  content: "\e9f3";
+}
+.icon-brightness:before {
+  content: "\e9f4";
+}
+.icon-brightnessOutlined:before {
+  content: "\e9f5";
+}
+.icon-CamerasOff:before {
+  content: "\e9f6";
+}
+.icon-CamerasOn:before {
+  content: "\e9f7";
+}
+.icon-Football:before {
+  content: "\e9af";
+}
+.icon-Basketball:before {
+  content: "\e9b0";
+}
+.icon-Hockey:before {
+  content: "\e9b1";
+}
+.icon-Clock:before {
+  content: "\e9b2";
+}
+.icon-QRCode:before {
+  content: "\e9b3";
+}
+.icon-Compliments:before {
+  content: "\e9b4";
+}
+.icon-ClothingAdvice:before {
+  content: "\e9b5";
+}
+.icon-Forecast:before {
+  content: "\e9b6";
+}
+.icon-AroundMe:before {
+  content: "\e9ab";
+}
+.icon-NewsFeed:before {
+  content: "\e9ac";
+}
+.icon-provision:before {
+  content: "\e9ad";
+}
+.icon-Products:before {
+  content: "\e9ae";
+}
+.icon-widget:before {
+  content: "\e9aa";
+}
+.icon-EntertainmentFacilitiy:before {
+  content: "\e9a7";
+}
+.icon-Gym:before {
+  content: "\e9a8";
+}
+.icon-SwimmingPool:before {
+  content: "\e9a9";
+}
+.icon-Balcony:before {
+  content: "\e998";
+}
+.icon-Bathtub:before {
+  content: "\e999";
+}
+.icon-Beach:before {
+  content: "\e99a";
+}
+.icon-Casino:before {
+  content: "\e99b";
+}
+.icon-CityView:before {
+  content: "\e99c";
+}
+.icon-ClothesRack:before {
+  content: "\e99d";
+}
+.icon-DryingRack:before {
+  content: "\e99e";
+}
+.icon-Garden:before {
+  content: "\e99f";
+}
+.icon-Lake:before {
+  content: "\e9a0";
+}
+.icon-MountainView:before {
+  content: "\e9a1";
+}
+.icon-Patio:before {
+  content: "\e9a2";
+}
+.icon-PetFriendly:before {
+  content: "\e9a3";
+}
+.icon-Restaurant:before {
+  content: "\e9a4";
+}
+.icon-Shower:before {
+  content: "\e9a5";
+}
+.icon-Wifi:before {
+  content: "\e9a6";
+}
+.icon-briefcase:before {
+  content: "\e994";
+}
+.icon-laundry:before {
+  content: "\e995";
+}
+.icon-parking:before {
+  content: "\e996";
+}
+.icon-wheelchair:before {
+  content: "\e997";
+}
+.icon-money-currency:before {
+  content: "\e993";
+}
+.icon-NotActive:before {
+  content: "\e992";
+}
+.icon-settings:before {
+  content: "\e991";
+}
+.icon-DropDownArrow:before {
+  content: "\e98f";
+}
+.icon-DropUpArrow:before {
+  content: "\e990";
+}
+.icon-viewMissing:before {
+  content: "\e988";
+}
+.icon-view:before {
+  content: "\e989";
+}
+.icon-Pound:before {
+  content: "\e98a";
+}
+.icon-Riyal:before {
+  content: "\e98b";
+}
+.icon-dirham:before {
+  content: "\e98c";
+}
+.icon-Dollar:before {
+  content: "\e98d";
+}
+.icon-euro:before {
+  content: "\e98e";
+}
+.icon-downward-arrow:before {
+  content: "\e987";
+}
+.icon-Ticketing:before {
+  content: "\e986";
+}
+.icon-notification:before {
+  content: "\e985";
+}
+.icon-invoice:before {
+  content: "\e97d";
+}
+.icon-Shipping:before {
+  content: "\e97e";
+}
+.icon-tracing:before {
+  content: "\e97f";
+}
+.icon-cargoship:before {
+  content: "\e980";
+}
+.icon-inquiry:before {
+  content: "\e981";
+}
+.icon-home:before {
+  content: "\e982";
+}
+.icon-alert:before {
+  content: "\e983";
+}
+.icon-checked:before {
+  content: "\e984";
+}
+.icon-language:before {
+  content: "\e97c";
+}
+.icon-RoomSnack:before {
+  content: "\e979";
+}
+.icon-trashcan:before {
+  content: "\e97a";
+}
+.icon-announcement:before {
+  content: "\e97b";
+}
+.icon-TechnicalSupport:before {
+  content: "\e965";
+}
+.icon-FreshTowels:before {
+  content: "\e966";
+}
+.icon-abouthotel:before {
+  content: "\e967";
+}
+.icon-BathingMaterials:before {
+  content: "\e968";
+}
+.icon-BeddingSheets:before {
+  content: "\e969";
+}
+.icon-CleaningServices:before {
+  content: "\e96a";
+}
+.icon-email:before {
+  content: "\e96b";
+}
+.icon-eventsIcon:before {
+  content: "\e96c";
+}
+.icon-foodmenu:before {
+  content: "\e96d";
+}
+.icon-hotelbell:before {
+  content: "\e96e";
+}
+.icon-LuggageServices:before {
+  content: "\e96f";
+}
+.icon-MedicalServices:before {
+  content: "\e970";
+}
+.icon-minus:before {
+  content: "\e971";
+}
+.icon-pin:before {
+  content: "\e972";
+}
+.icon-plus:before {
+  content: "\e973";
+}
+.icon-reservation:before {
+  content: "\e974";
+}
+.icon-roomsnackcard:before {
+  content: "\e975";
+}
+.icon-smartphone:before {
+  content: "\e976";
+}
+.icon-staffservices:before {
+  content: "\e977";
+}
+.icon-pamphlet:before {
+  content: "\e978";
+}
+.icon-Push:before {
+  content: "\e963";
+}
+.icon-Pull:before {
+  content: "\e964";
+}
+.icon-Search:before {
+  content: "\e962";
+}
+.icon-MoreInfo:before {
+  content: "\e961";
+}
+.icon-StickyNotes:before {
+  content: "\e900";
+}
+.icon-astrology:before {
+  content: "\e901";
+}
+.icon-BackIcon:before {
+  content: "\e902";
+}
+.icon-bbq-grill:before {
+  content: "\e903";
+}
+.icon-boot:before {
+  content: "\e904";
+}
+.icon-boots:before {
+  content: "\e905";
+}
+.icon-buy:before {
+  content: "\e906";
+}
+.icon-calendar:before {
+  content: "\e907";
+}
+.icon-Cameras:before {
+  content: "\e908";
+}
+.icon-cap:before {
+  content: "\e909";
+}
+.icon-car:before {
+  content: "\e90a";
+}
+.icon-closeX:before {
+  content: "\e90b";
+}
+.icon-clothes:before {
+  content: "\e90c";
+}
+.icon-coat:before {
+  content: "\e90d";
+}
+.icon-confetti:before {
+  content: "\e90e";
+}
+.icon-CoolingSystemOff:before {
+  content: "\e90f";
+}
+.icon-CoolingSystemOn:before {
+  content: "\e910";
+}
+.icon-Curtains:before {
+  content: "\e911";
+}
+.icon-CurtainsOff:before {
+  content: "\e912";
+}
+.icon-CurtainsOn:before {
+  content: "\e913";
+}
+.icon-dining-room:before {
+  content: "\e914";
+}
+.icon-disc:before {
+  content: "\e915";
+}
+.icon-Door:before {
+  content: "\e916";
+}
+.icon-Elevator:before {
+  content: "\e917";
+}
+.icon-ellipsis:before {
+  content: "\e918";
+}
+.icon-exit:before {
+  content: "\e919";
+}
+.icon-flip-flops:before {
+  content: "\e91a";
+}
+.icon-glove:before {
+  content: "\e91b";
+}
+.icon-HeaterOff:before {
+  content: "\e91c";
+}
+.icon-HeaterOn:before {
+  content: "\e91d";
+}
+.icon-help:before {
+  content: "\e91e";
+}
+.icon-high-heel:before {
+  content: "\e91f";
+}
+.icon-hoodie:before {
+  content: "\e920";
+}
+.icon-jacket:before {
+  content: "\e921";
+}
+.icon-kitchen:before {
+  content: "\e922";
+}
+.icon-lamp:before {
+  content: "\e923";
+}
+.icon-leftarrow:before {
+  content: "\e924";
+}
+.icon-LightBulbOff:before {
+  content: "\e925";
+}
+.icon-LightBulbOn:before {
+  content: "\e926";
+}
+.icon-location:before {
+  content: "\e927";
+}
+.icon-lockedFeature:before {
+  content: "\e928";
+}
+.icon-Management:before {
+  content: "\e929";
+}
+.icon-MemoryGame:before {
+  content: "\e92a";
+}
+.icon-minesweeper:before {
+  content: "\e92b";
+}
+.icon-music:before {
+  content: "\e92d";
+}
+.icon-Pardik:before {
+  content: "\e92e";
+}
+.icon-ParkingGarageOff:before {
+  content: "\e92f";
+}
+.icon-ParkingGarageOn:before {
+  content: "\e930";
+}
+.icon-relax:before {
+  content: "\e931";
+}
+.icon-rightarrow:before {
+  content: "\e932";
+}
+.icon-room:before {
+  content: "\e933";
+}
+.icon-RoomBathroomIcon:before {
+  content: "\e934";
+}
+.icon-RoomBedroomIcon:before {
+  content: "\e935";
+}
+.icon-RoomGarageIcon:before {
+  content: "\e936";
+}
+.icon-RoomGardenIcon:before {
+  content: "\e937";
+}
+.icon-RoomGymIcon:before {
+  content: "\e938";
+}
+.icon-RoomHomeTheaterIcon:before {
+  content: "\e939";
+}
+.icon-RoomKidsRoomIcon:before {
+  content: "\e93a";
+}
+.icon-RoomKitchenIcon:before {
+  content: "\e93b";
+}
+.icon-RoomLivingRoomIcon:before {
+  content: "\e93c";
+}
+.icon-RoomLobbyIcon:before {
+  content: "\e93d";
+}
+.icon-RoomOutdoorsIcon:before {
+  content: "\e93e";
+}
+.icon-RoomRoofIcon:before {
+  content: "\e93f";
+}
+.icon-RoomSpaIcon:before {
+  content: "\e940";
+}
+.icon-RoomStudyIcon:before {
+  content: "\e941";
+}
+.icon-running-shoe:before {
+  content: "\e942";
+}
+.icon-sandals-F:before {
+  content: "\e943";
+}
+.icon-sandals-M:before {
+  content: "\e944";
+}
+.icon-SendMassage:before {
+  content: "\e945";
+}
+.icon-shirt:before {
+  content: "\e946";
+}
+.icon-shoe-1:before {
+  content: "\e947";
+}
+.icon-shoe:before {
+  content: "\e948";
+}
+.icon-shoes:before {
+  content: "\e949";
+}
+.icon-shorts:before {
+  content: "\e94a";
+}
+.icon-sleeveless:before {
+  content: "\e94b";
+}
+.icon-smart-house:before {
+  content: "\e94c";
+}
+.icon-sneakers-2:before {
+  content: "\e94d";
+}
+.icon-sneakers-3:before {
+  content: "\e94e";
+}
+.icon-sneakers:before {
+  content: "\e94f";
+}
+.icon-sunglasses:before {
+  content: "\e950";
+}
+.icon-tablet:before {
+  content: "\e951";
+}
+.icon-tictactoe:before {
+  content: "\e952";
+}
+.icon-trousers:before {
+  content: "\e953";
+}
+.icon-tshirt:before {
+  content: "\e954";
+}
+.icon-umbrella:before {
+  content: "\e955";
+}
+.icon-unlockedFeature:before {
+  content: "\e956";
+}
+.icon-user:before {
+  content: "\e957";
+}
+.icon-ValveOff:before {
+  content: "\e958";
+}
+.icon-ValveOn:before {
+  content: "\e959";
+}
+.icon-videostream:before {
+  content: "\e95a";
+}
+.icon-WallPlugOff:before {
+  content: "\e95b";
+}
+.icon-WallPlugOn:before {
+  content: "\e95c";
+}
+.icon-Weather:before {
+  content: "\e95d";
+}
+.icon-winter:before {
+  content: "\e95e";
+}
+.icon-workplace:before {
+  content: "\e95f";
+}
+.icon-WorldClock:before {
+  content: "\e960";
+}

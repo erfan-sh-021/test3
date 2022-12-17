@@ -1,0 +1,74 @@
+:root {
+  --PrimaryColor: #151c15;
+  --LightPrimaryColor: #48575e;
+  --MiddleColor: #b8cf69;
+  --SecondaryColor: #699b2c;
+  --LightSecondaryColor: #2d4a1a;
+  --PrimaryToLightGradient: linear-gradient(135deg, #151c15 0%, #48575e 100%);
+  --PrimaryToMiddleGradient: linear-gradient(135deg, #b8cf69 0%, #48575e 100%);
+  --SecondaryToMiddleGradient: linear-gradient(135deg, #699b2c 0%, #b8cf69 100%);
+  --PrimaryToSecondaryGradient: linear-gradient(135deg, #151c15 0%, #699b2c 100%);
+  --LightToSecondaryGradient: linear-gradient(135deg, #2d4a1a 0%, #699b2c 100%);
+  --LightToWhiteGradient: linear-gradient(135deg, #fff9f7 0%, #f1f1f1 100%);
+  --SelecetedColor: linear-gradient(90deg, #ffffff 0%, #699b2c 100%);
+  --White: #ffffff;
+  --Black: black;
+}
+
+.ColorPrimaryColor {
+  color: var(--PrimaryColor) !important;
+}
+.ColorLightPrimaryColor {
+  color: var(--LightPrimaryColor) !important;
+}
+.ColorMiddleColor {
+  color: var(--MiddleColor) !important;
+}
+.ColorSecondaryColor {
+  color: var(--SecondaryColor) !important;
+}
+.ColorLightSecondaryColor {
+  color: var(--LightSecondaryColor) !important;
+}
+
+.BackgorundPrimaryColor {
+  background: var(--PrimaryColor) !important;
+}
+.BackgorundLightPrimaryColor {
+  background: var(--LightPrimaryColor) !important;
+}
+.BackgorundMiddleColor {
+  background: var(--MiddleColor) !important;
+}
+.BackgorundSecondaryColor {
+  background: var(--SecondaryColor) !important;
+}
+.BackgorundLightSecondaryColor {
+  background: var(--LightSecondaryColor) !important;
+}
+
+.BackgroundPrimaryToLightGradient {
+  background: var(--PrimaryToLightGradient) !important;
+}
+.BackgroundPrimaryToMiddleGradient {
+  background: var(--PrimaryToMiddleGradient) !important;
+}
+.BackgroundSecondaryToMiddleGradient {
+  background: var(--SecondaryToMiddleGradient) !important;
+}
+.BackgroundPrimaryToSecondaryGradient {
+  background: var(--PrimaryToSecondaryGradient) !important;
+}
+.BackgroundLightToSecondaryGradient {
+  background: var(--LightToSecondaryGradient) !important;
+}
+.BackgroundLightToWhiteGradient {
+  background: var(--LightToWhiteGradient) !important;
+}
+
+.ColorBlackColor {
+  color: var(--Black);
+}
+.ColorWhiteColor {
+  color: var(--White);
+}

@@ -1,0 +1,49 @@
+.FontSizeL{font-size:large !important;}
+.FontSizeXL{font-size:x-large !important;}
+.FontSizeXXL{font-size:xx-large !important;}
+.FontSizeXXXL{font-size:xxx-large !important;}
+.FontSizeM{font-size:medium !important;}
+.FontBold{font-weight:600 !important;}
+.DisplayFlex{display:flex !important;}
+.DisplayInlineFlex{display:inline-flex !important;}
+.DisplayNone{display:none !important;}
+.DisplayBlock{display:block !important;}
+.DisplayTable{display:Table !important;}
+.DisplayGrid{display:grid !important;}
+.WidthFull{width:100% !important;}
+.WidthHalf{width:50% !important;}
+.WidthQuarter{width:25% !important;}
+.WidthAThird{width:33.3333% !important;}
+.WidthTwoThird{width:66.6666% !important;}
+.WidthOneFifth{width:20% !important;}
+.WidthFourOneFifth{width:80% !important;}
+.WidthThreeQuarters{width:75% !important;}
+.HeightFull{height: 100% !important}
+.HeightHalf{height: 50% !important}
+.HeightQuarter{height: 25% !important}
+.HeightAThird{height: 33.3333% !important}
+.HeightThreeQuarters{height: 75% !important}
+.VerticallyCenteredObject{display:flex;justify-content:center;flex-direction:column;}
+.HorizontallyCenteredText{text-align:center;}
+.HorizontallyCenteredItem{margin:0 auto;}
+.VerticallyAndHorizontallyCentered{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
+.FloatLeft{float:left;}
+.FloatRight{float:right;}
+.PositionAbsolute{position:absolute;}
+.PositionReletive{position:relative;}
+.PositionFixed{position:fixed;}
+.CircledithPercentage{width:50%;object-fit:contain;border-radius:100%;}
+.CircledithPercentage:after{content:"";display:block;padding-bottom:100%;}
+.SquredWithPercentage{width:50%;object-fit:contain;}
+.SquredWithPercentage:after{content:"";display:block;padding-bottom:100%;}
+.RightToLeftDirection{direction:rtl;text-align:right;}
+.LeftToRightDirection{direction:ltr;text-align:left;}
+.RightToLeftCenteredDirection{direction:rtl;text-align:center;}
+.JustifiedText{text-align:justify;}
+.PictureFitCover{object-fit:cover !important;}
+.PictureFitContain{object-fit:contain !important;}
+.ColorBlack{color: black !important;}
+.ColorWhite{color: white !important;}
+.BackgroundColorBlack{background-color: black !important;}
+.BackgroundColorWhite{background-color: white !important;}
+.textDecorationNone{text-decoration: none;}

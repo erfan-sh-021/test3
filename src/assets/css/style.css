@@ -1,0 +1,598 @@
+body {
+  font-family: Dosis !important;
+  margin: 0;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #00000000;
+  width: 20px;
+}
+hr {
+  width: 100%;
+}
+a {
+  text-decoration: none !important;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.ContentBody {
+  width: 100%;
+  height: 100%;
+}
+.BodyPadding {
+  padding: 3em;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+.EditPageContainer {
+  background: var(--White);
+  border-radius: 1em;
+  width: 100%;
+  border: solid 1px black;
+  height: 100%;
+}
+.EditPageTwoColumn {
+  background: var(--White);
+  border-radius: 1em;
+  width: 100%;
+  border: solid 1px black;
+  height: 100%;
+  display: grid;
+  grid-auto-columns: 3fr 7fr;
+  color: var(--Black);
+  grid-auto-flow: column;
+  padding-bottom: 3%;
+  box-sizing: border-box;
+  position: relative;
+}
+.EditPageThreeColumnNoBG {
+  width: 100%;
+  grid-gap: 15px;
+  height: 100%;
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr;
+  color: var(--Black);
+  grid-auto-flow: column;
+  padding-bottom: 3%;
+  box-sizing: border-box;
+  position: relative;
+}
+.EditPageTwoColumnNoBG {
+  width: 100%;
+  grid-gap: 15px;
+  height: 100%;
+  display: grid;
+  grid-auto-columns: 3fr 7fr;
+  color: var(--Black);
+  grid-auto-flow: column;
+  padding-bottom: 3%;
+  box-sizing: border-box;
+  position: relative;
+}
+.EditPageTwoColumnItem {
+  padding: 2em;
+}
+.EditContainerWithScroll {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  box-sizing: border-box;
+}
+.EditPageTwoColumnItemWithBGWithScroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  background: var(--White);
+  border-radius: 1em;
+  position: relative;
+  box-sizing: border-box;
+}
+.EditPageTwoColumnItemWithBG {
+  padding: 2em;
+  background: var(--White);
+  border-radius: 1em;
+  position: relative;
+}
+.EditPageSaveButton {
+  position: absolute;
+  bottom: 0;
+  padding: 0 4em;
+}
+.EditPageThreeColumn {
+  background: var(--White);
+  border-radius: 1em;
+  width: 100%;
+  border: solid 1px black;
+  height: 100%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  color: var(--Black);
+  grid-auto-flow: column;
+  padding-bottom: 3%;
+  box-sizing: border-box;
+  position: relative;
+}
+.EditPageThreeColumnItem {
+  padding: 2em;
+}
+.EditPageItemBorder {
+  height: 100%;
+  border: solid 1px rgb(55, 55, 55);
+  border-radius: 15px;
+  background: white;
+}
+.EditPageItemBorderSmaller {
+  height: 80%;
+  border: solid 1px rgb(55, 55, 55);
+  border-radius: 15px;
+}
+.EditPageItemBorderMedium {
+  height: 90%;
+  border: solid 1px rgb(55, 55, 55);
+  border-radius: 15px;
+}
+.EditPageItemBorderMediumDescription {
+  height: 10%;
+}
+.EditPageItemBorderSmallerDescription {
+  height: 20%;
+}
+.EditPageItemHeader {
+  background: var(--SecondaryColor);
+  color: white;
+  height: 70px;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 20px;
+}
+.EditStaffPageItemHeader {
+  background: var(--PrimaryToLightGradient);
+  color: white;
+  height: 70px;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 20px;
+}
+.EditPageColomnSelectableItem {
+  height: 70px;
+  background: var(--White);
+  color: var(--Black);
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  justify-content: space-between;
+  padding: 0 1em;
+  border-bottom: solid 1px rgb(55, 55, 55);
+}
+.EditStaffPageColomnSelectableItem {
+  height: 70px;
+  background: var(--White);
+  color: var(--Black);
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  justify-content: flex-start;
+  position: relative;
+  padding: 0 1em;
+  border-bottom: solid 1px rgb(55, 55, 55);
+}
+.EditPageColomnSelectableItemSelected {
+  background: var(--LightPrimaryColor);
+  color: var(--White);
+}
+.EditTitle {
+  font-size: xx-large;
+}
+.EditDescriptions {
+  font-size: large;
+}
+.EditPgefooter {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.EditFlagImage {
+  width: 40px;
+  height: 40px;
+}
+.EditLanguageAlert {
+  background: var(--SecondaryColor);
+  color: white;
+  height: 70px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  align-content: center;
+  padding: 0 20px;
+}
+.EditLanguageCompleted {
+  background: var(--PrimaryToLightGradient);
+  color: white;
+  height: 70px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  align-content: center;
+  padding: 0 20px;
+}
+.EditLanguageIconAlert {
+  font-size: xxx-large;
+}
+.EditCrudContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.ResponsiveGridViewer {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  justify-items: center;
+  padding: 0 5%;
+}
+@media (min-width: 1200px) {
+  .ResponsiveGridViewer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1600px) {
+  .ResponsiveGridViewer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.FoodFlexContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 5em;
+}
+.FoodFlexItems {
+  width: 28%;
+  background: black;
+  position: relative;
+  color: white !important;
+  padding: 2em;
+  box-sizing: border-box;
+}
+.FoodMenuBackground {
+  background-image: url("/public/images/backgrounds/FoodMenu.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MealTimeBackground {
+  background-image: url("/public/images/backgrounds/Mealtime.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.FoodCategoryBackground {
+  background-image: url("/public/images/backgrounds/FoodCategory.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.FoodFlexInnerItems {
+  box-sizing: border-box;
+  border: white solid 5px;
+  height: 100%;
+  position: relative;
+}
+.FoodFlexItemTitle {
+  font-size: 3em;
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+}
+.FoodFlexItemDescription {
+  position: absolute;
+  width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 1em;
+  box-sizing: border-box;
+  bottom: 0;
+  font-size: 1em;
+}
+.HeaderSelector {
+  background: var(--PrimaryColor);
+  color: white;
+  height: 70px;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+}
+
+.RatioSelectorHeader {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.SelectedHeader {
+  background: var(--SecondaryColor);
+  cursor: not-allowed;
+}
+.WidgetManagmentScreen {
+  width: 100%;
+  height: 90%;
+  padding: 2em;
+  box-sizing: border-box;
+  position: relative;
+}
+.LanscapeView {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.LandscapeMasonaryParent {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 100%;
+  height: 100%;
+  border: solid 1px gray;
+  border-radius: 5px;
+}
+.react-grid-layout {
+  position: relative;
+  transition: height 200ms ease;
+}
+.react-grid-item {
+  transition: all 200ms ease;
+  transition-property: left, top;
+}
+.react-grid-item img {
+  pointer-events: none;
+  user-select: none;
+}
+.react-grid-item.cssTransforms {
+  transition-property: transform;
+}
+.react-grid-item.resizing {
+  z-index: 1;
+  will-change: width, height;
+}
+
+.react-grid-item.react-draggable-dragging {
+  transition: none;
+  z-index: 3;
+  will-change: transform;
+}
+
+.react-grid-item.dropping {
+  visibility: hidden;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background: red;
+  opacity: 0.2;
+  transition-duration: 100ms;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.react-grid-item > .react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.react-grid-item > .react-resizable-handle::after {
+  content: "";
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.react-resizable-hide > .react-resizable-handle {
+  display: none;
+}
+
+.react-grid-item > .react-resizable-handle.react-resizable-handle-sw {
+  bottom: 0;
+  left: 0;
+  cursor: sw-resize;
+  transform: rotate(90deg);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-se {
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-nw {
+  top: 0;
+  left: 0;
+  cursor: nw-resize;
+  transform: rotate(180deg);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-ne {
+  top: 0;
+  right: 0;
+  cursor: ne-resize;
+  transform: rotate(270deg);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-w,
+.react-grid-item > .react-resizable-handle.react-resizable-handle-e {
+  top: 50%;
+  margin-top: -10px;
+  cursor: ew-resize;
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-w {
+  left: 0;
+  transform: rotate(135deg);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-e {
+  right: 0;
+  transform: rotate(315deg);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-n,
+.react-grid-item > .react-resizable-handle.react-resizable-handle-s {
+  left: 50%;
+  margin-left: -10px;
+  cursor: ns-resize;
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-n {
+  top: 0;
+  transform: rotate(225deg);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-s {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+.GridItem {
+  background: var(--PrimaryToSecondaryGradient);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.ScreenBackground {
+  background: black;
+  border-radius: 5px;
+}
+.SchedulerContainer {
+  display: grid;
+  position: absolute;
+  height: 180px;
+}
+.HoursOftheDay {
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  grid-auto-flow: column;
+  align-items: center;
+}
+.schedularScroll {
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 180px;
+  width: 100%;
+}
+.schedularScroll::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.SchedulerItem {
+  width: 100px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: solid 1px hsl(0deg 0% 50%);
+}
+.SchedulerRuleAddContainer {
+  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 3fr) 2fr;
+  align-items: center;
+  width: 100%;
+}
+.SchedulerRuleAddTextBox {
+  background: transparent;
+  font-size: large;
+  font-family: Dosis;
+  border: none;
+  border-bottom: solid 1px hsl(0deg 0% 50%);
+}
+.SchedulerRuleTimeAdd {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.SchedulerInnerItem {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.SchedulerInnerItemSelected {
+  color: var(--White);
+  background: var(--SecondaryToMiddleGradient);
+}
+.SuccessfulTransition {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  font-size: xx-large;
+  text-align: center;
+  flex-direction: column;
+}
+.SuccessfulTransitionIcon {
+  font-size: 120px;
+}
+.AddNewRuleBtnContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.AddNewRuleBtn {
+  color: var(--White);
+  background: var(--SecondaryColor);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 1em;
+  padding: 5px 20px;
+  cursor: pointer;
+}
