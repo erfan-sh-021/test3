@@ -1,0 +1,54 @@
+// $color-dark : #262626;
+// @font-face{
+//     font-family: sahel;
+//     src: url('../fonts/Sahel.eot');
+//     src:url('../fonts/Sahel.ttf') format('ttf'),url('../fonts/Sahel.woff') format('woff');
+//     font-weight: normal;
+//    }
+//    @mixin flexLayout {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+//   .main-name{
+//     font-family: $font-sahel;
+//     font-size:50px;
+//     color:$color-secondry;
+//     @include textStyle
+//  }
+
+
+.main{
+    @include backgroundColor();
+    min-height: 624px;
+    float: right;
+    
+    .sideBar{
+        width: 100%;
+    }
+}
+
+.menuLogo>span{
+    font-size: 44px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+}
+.items{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    li{
+        margin:0 20px 18px 0;
+        font-size: $desktop-medium-fontSize;
+        
+        span{
+           font-size: 20px;
+           padding-left: 0.3rem;
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    
+}
