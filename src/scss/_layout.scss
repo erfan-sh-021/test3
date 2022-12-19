@@ -51,7 +51,16 @@
         //         }
 //     }
 // }
-
+.active{
+    display: block;
+}
+.deactive{
+    display: none;
+}
+.background{
+    background: rgb(255,255,255);
+    background: linear-gradient(148deg, rgba(255,255,255,1) 0%, rgba(255,243,226,1) 50%, rgba(239,245,255,1) 100%);
+}
 @media only screen and (max-width: 425px) {
     .items {
         list-style: none;
@@ -82,6 +91,7 @@
     .main {
         width: 100%;
         min-height: 1000px;
+        
     }
 
     .navbarMenu {

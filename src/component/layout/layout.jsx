@@ -1,19 +1,40 @@
 import { useEffect } from 'react';
 import '../../assets/fonts/icomoon/style.css';
-
+//////////////////by remove and add
+// iconMenu.addEventListener('touchend', () => {
+//     iconMenu.classList.add('deactive');
+//     iconMenuCloseX.classList.remove('deactive');
+// })
+// iconMenuCloseX.addEventListener('touchend', () => {
+//     iconMenuCloseX.classList.add('deactive');
+//     iconMenu.classList.remove('deactive');
+// })
 // console.log(iconMenu)
 const Layout = () => {
-    // useEffect(()=>{
-    //     const iconMenu = document.querySelector('.icon-menu');
-    //     iconMenu.addEventListener('touchend', () => {
-    //         console.log(iconMenu)
-    //     })
+    useEffect(()=>{
+        const iconMenu = document.querySelector('.icon-menu');
+        const iconMenuCloseX = document.querySelector('.icon-closeX');
+        const sideBar =document.querySelector('.sideBar');
+        const main =document.querySelector('.main');
+        iconMenu.addEventListener('touchend', () => {
+            main.classList.remove('background')
+            sideBar.classList.remove('deactive');
+            iconMenu.classList.add('deactive');
+            iconMenuCloseX.classList.remove('deactive');
+        })
+        iconMenuCloseX.addEventListener('touchend', () => {
+            main.classList.add('background')
+            sideBar.classList.add('deactive');
+            iconMenuCloseX.classList.add('deactive');
+            iconMenu.classList.remove('deactive');
+        })
+
         
-    // },[iconMenu])
+    },[])
     return (
-        <div className="main">
-            <div className="navbarMenu"><span className="icon-menu"></span></div>
-            <div className="sideBar">
+        <div className="main background">
+            <div className="navbarMenu"><span className="icon-menu"/><span className="icon-closeX deactive"/ ></div>
+            <div className="sideBar deactive">
                 <div className="menuLogo">
                     <span className="icon-Pardik" />
                 </div>
