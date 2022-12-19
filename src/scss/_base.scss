@@ -1,17 +1,12 @@
+$color-white:#fff;
+$color-gray:#707070;
+
+
+// --------------------fontSize---------------------------
+$mobile-icons-size:35px;
 $desktop-medium-fontSize: 15px;
-
-
-
-
-
-
-
-
-
-
-
 // ----------------------mixin-----------------------------
 @mixin backgroundColor {
     background: rgb(255,255,255);
-background: linear-gradient(179deg, rgba(255,255,255,1) 0%, rgba(255,243,226,1) 50%, rgba(239,245,255,1) 100%);
+    background: linear-gradient(148deg, rgba(255,255,255,1) 0%, rgba(255,243,226,1) 50%, rgba(239,245,255,1) 100%);
 }
