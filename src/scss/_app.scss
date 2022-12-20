@@ -1,5 +1,14 @@
-.body{
+body,html{
     margin:0;
     padding: 0;
-    direction: rtl;
+    // direction: rtl;
+    min-height: 100% !important;
+    height: 100%;
+    width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+#root{
+    height: 100%;
 }

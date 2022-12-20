@@ -14,17 +14,17 @@ const Layout = () => {
     useEffect(()=>{
         const iconMenu = document.querySelector('.icon-menu');
         const iconMenuCloseX = document.querySelector('.icon-closeX');
-        const sideBar =document.querySelector('.sideBar');
+        const menuItems =document.querySelector('.menuItems');
         const main =document.querySelector('.main');
         iconMenu.addEventListener('touchend', () => {
             main.classList.remove('background')
-            sideBar.classList.remove('deactive');
+            menuItems.classList.remove('deactive');
             iconMenu.classList.add('deactive');
             iconMenuCloseX.classList.remove('deactive');
         })
         iconMenuCloseX.addEventListener('touchend', () => {
             main.classList.add('background')
-            sideBar.classList.add('deactive');
+            menuItems.classList.add('deactive');
             iconMenuCloseX.classList.add('deactive');
             iconMenu.classList.remove('deactive');
         })
@@ -34,7 +34,7 @@ const Layout = () => {
     return (
         <div className="main background">
             <div className="navbarMenu"><span className="icon-menu"/><span className="icon-closeX deactive"/ ></div>
-            <div className="sideBar deactive">
+            <div className="menuItems deactive">
                 <div className="menuLogo">
                     <span className="icon-Pardik" />
                 </div>
