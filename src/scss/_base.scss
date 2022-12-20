@@ -11,8 +11,10 @@ $color-gray:#707070;
 
 
 // --------------------fontSize---------------------------
+$tablet-icons-size:25px;
 $mobile-icons-size:35px;
-$desktop-medium-fontSize: 15px;
+$desktop-menu-fontSize: 15px;
+$tablet-menu-fontSize: 12px;
 // ----------------------mixin-----------------------------
 @mixin backgroundColor {
     background: rgb(255,255,255);
