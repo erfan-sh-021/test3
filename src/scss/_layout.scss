@@ -42,15 +42,19 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 40px;
 
     li {
-            margin: 0 20px 18px 0;
-            font-size: $desktop-medium-fontSize;
-    
-            span {
-                    font-size: 20px;
-                    padding-left: 0.3rem;
-                }
+        margin: 0 40px 18px 0;
+        font-size: $desktop-medium-fontSize;
+        color:$color-gray;
+        span {
+            font-size: $mobile-icons-size;
+            padding-left: 1.5rem;
+        }
+    }
+    li:last-child{
+        color:#E605D0;
     }
 }
 .user {
@@ -60,6 +64,7 @@
     justify-content: flex-end;
     align-items: center;
     height: 70px;
+    width: 100%;
     order: 2;
     position: absolute;
     bottom: 0;
