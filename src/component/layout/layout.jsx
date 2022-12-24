@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Outlet } from 'react-router-dom';
 import '../../assets/fonts/icomoon/style.css';
 //////////////////by remove and add
 // iconMenu.addEventListener('touchend', () => {
@@ -33,11 +34,14 @@ const Layout = () => {
     }, [])
     return (
         <div className="page">
+            <div className="left">
+                <Outlet/>
+            </div>
             <div className="menu background">
                 <div className="navbarMenu"><span className="icon-menu" /><span className="icon-closeX deactive" /></div>
                 <div className="menuItems deactive">
                     <div className="menuLogo">
-                        <span className="icon-Pardik" />
+                        <img src={require('../../assets/img/Pardik logo landscape.png')} alt="" />
                     </div>
                     <div className="user">
                         <div className="userDetails">

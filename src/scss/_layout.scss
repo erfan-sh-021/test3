@@ -17,6 +17,12 @@
 }
 
 @media only screen and (min-width: 769px) {
+    .left {
+        width: 75%;
+        height: 100%;
+        float: left;
+    }
+
     .page {
         @include backgroundColor();
     }
@@ -29,6 +35,7 @@
         background: $color-white;
         float: right;
         height: 100%;
+        width: 25%;
 
         .menuItems {
             min-height: 624px !important;
@@ -40,11 +47,11 @@
         }
     }
 
-    .menuLogo>span {
-        font-size: 44px;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
+    .menuLogo>img {
+        width: 100px;
+        height: 50px;
+        margin: 25px auto;
+        display: block;
     }
 
     .items {
@@ -52,7 +59,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin-top: 30px;
+        margin-top: 10px;
 
         li {
             margin: 0 40px 18px 0;
@@ -85,7 +92,7 @@
 
         .icon-user {
             font-size: $mobile-icons-size;
-            background: #05C0E6;
+            background: $color-cyan;
             width: 55px;
             display: flex;
             height: 55px;
@@ -115,6 +122,12 @@
 
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
+    .left {
+        width: 75%;
+        height: 100%;
+        float: left;
+    }
+
     .page {
         @include backgroundColor();
     }
@@ -127,7 +140,8 @@
         background: $color-white;
         float: right;
         height: 100%;
-        max-width: 200px;
+        width: 25%;
+        // max-width: 200px;
 
         .menuItems {
             min-height: 624px !important;
@@ -139,11 +153,11 @@
         }
     }
 
-    .menuLogo>span {
-        font-size: 44px;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
+    .menuLogo>img {
+        width: 100px;
+        height: 50px;
+        margin: 25px auto;
+        display: block;
     }
 
     .items {
@@ -151,7 +165,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin-top: 30px;
+        margin-top: 10px;
 
         li {
             margin: 0 15px 18px 0;
@@ -184,7 +198,7 @@
 
         .icon-user {
             font-size: $mobile-icons-size;
-            background: #05C0E6;
+            background: $color-cyan;
             width: 45px;
             display: flex;
             height: 45px;
@@ -237,11 +251,12 @@
         }
     }
 
-    .menuLogo>span {
-        font-size: 80px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
+    .menuLogo>img{
+        width: 160px;
+        height: 80px;
+        display: block;
+        margin: 0  auto 10px auto;
+    
     }
 
     .menu {
@@ -267,7 +282,7 @@
 
         .icon-user {
             font-size: $mobile-icons-size;
-            background: #05C0E6;
+            background: $color-cyan;
             width: 55px;
             display: flex;
             height: 55px;
