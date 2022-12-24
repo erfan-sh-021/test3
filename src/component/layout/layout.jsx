@@ -34,14 +34,14 @@ const Layout = () => {
     }, [])
     return (
         <div className="page">
+            <div className="navbarMenu"><span className="icon-menu" /><span className="icon-closeX deactive" /></div>
             <div className="left">
-                <Outlet/>
+                <Outlet />
             </div>
             <div className="menu background">
-                <div className="navbarMenu"><span className="icon-menu" /><span className="icon-closeX deactive" /></div>
                 <div className="menuItems deactive">
                     <div className="menuLogo">
-                        <img src={require('../../assets/img/Pardik logo landscape.png')} alt="" />
+                        <img src={require('../../assets/img/Pardik logo landscape.png')} alt="logo" />
                     </div>
                     <div className="user">
                         <div className="userDetails">

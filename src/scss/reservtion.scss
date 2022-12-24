@@ -1,7 +1,45 @@
-
-.btn{
+.btn {
     // background: $color-cyan;
 }
-.card{
-    width: 18rem;
+
+.card {
+    width: 9rem;
+}
+
+@media only screen and (min-width: 769px) {}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {}
+
+@media only screen and (max-width: 425px) {
+    .menu{display:none}
+    .card {
+        width: 9rem;
+        margin: 10px 5px 5px 5px;
+        padding: 0;
+        height: 130px;
+        img{
+            height: 128px;
+            border-radius: 5px;
+        }
+    }
+    .card-img-overlay{
+        padding: 0;
+        .card-title{
+            background: white;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 15px;
+            height: 22px;
+            font-size: 15px;
+        }
+        button{
+            display: none;
+        }
+    }
+
+    .row {
+        justify-content: center;
+    }
+
 }
