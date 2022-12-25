@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import '../../assets/fonts/icomoon/style.css';
 //////////////////by remove and add
 // iconMenu.addEventListener('touchend', () => {
@@ -17,6 +17,7 @@ const Layout = () => {
         const iconMenuCloseX = document.querySelector('.icon-closeX');
         const menuItems = document.querySelector('.menuItems');
         const menu = document.querySelector('.menu');
+        const reservtion = document.querySelector('.reservtion');
         iconMenu.addEventListener('touchend', () => {
             menu.classList.remove('background')
             menuItems.classList.remove('deactive');
@@ -29,15 +30,17 @@ const Layout = () => {
             iconMenuCloseX.classList.add('deactive');
             iconMenu.classList.remove('deactive');
         })
+        reservtion.addEventListener('click',()=>{
+            menu.classList.add('deactive');
+            iconMenuCloseX.classList.add('deactive');
+            iconMenu.classList.remove('deactive');
+        })
 
 
     }, [])
     return (
         <div className="page">
             <div className="navbarMenu"><span className="icon-menu" /><span className="icon-closeX deactive" /></div>
-            <div className="left">
-                <Outlet />
-            </div>
             <div className="menu background">
                 <div className="menuItems deactive">
                     <div className="menuLogo">
@@ -53,12 +56,17 @@ const Layout = () => {
                     <ul className="items">
                         <li>صفحه نخست<span className="icon-PardikHouse" /></li>
                         <li>پیام ها<span className="icon-announcement" /></li>
-                        <li>رزرو سرویس<span className="icon-reservation" /></li>
+                        <Link to={'/resevtion'}>
+                            <li className='reservtion'>رزرو سرویس<span className="icon-reservation" /></li>
+                        </Link>
                         <li>پرداخت شارژ/بدهی<span className="icon-announcement" /></li>
                         <li>لیست تراکنش ها<span className="icon-invoice" /></li>
-                        <li>خروج<span className="icon-exit" /></li>
+                        <li className='exit'>خروج<span className="icon-exit" /></li>
                     </ul>
                 </div>
+            </div>
+            <div className="left">
+                <Outlet />
             </div>
         </div>
     );

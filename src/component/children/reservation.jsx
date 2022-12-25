@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import '../../scss/reservtion.scss';
+// import '../../scss/main.scss';
+
 
 const data=[
     {
@@ -32,18 +33,27 @@ const Reservation = () => {
     const [width,setWidth]=useState(window.innerWidth);
     const breakPoint = 427;
     useEffect(()=>{
-        // const card=document.querySelector('.card');
-        // const cardBody=document.querySelector('.card-body');
-        // const cardTitle=document.querySelector('.card-title');
-        // const cardButton=document.querySelector('.card-body>button');
-
+        const iconMenu = document.querySelector('.icon-menu');
+        const iconMenuCloseX = document.querySelector('.icon-closeX');
+        const card=document.querySelector('.card');
+        const cardBody=document.querySelector('.card-body');
+        const cardTitle=document.querySelector('.card-title');
+        const cardButton=document.querySelector('.card-body>button');
+        const menu=document.querySelector('.menu');
+        const left=document.querySelector('.left');
+        const menuItems = document.querySelector('.menuItems');
+        // console.log(iconMenu);
         const handleResizeWindow = () => setWidth(window.innerWidth);
         window.addEventListener("resize", handleResizeWindow);
+        iconMenu.addEventListener('click',()=>{
+            // menuItems.classList.remove('deactive');
+            // iconMenu.classList.add('deactive');
+            // iconMenuCloseX.classList.remove('deactive');
+            // left.classList.add('deactive');
+            
+        })
         return () => {
           window.removeEventListener("resize", handleResizeWindow);
-        //   (window.innerWidth<breakPoint)?
-        //       cardTitle.style.background='red' :
-        //       cardTitle.style.background='yellow'
         };
         
     },[]);
@@ -56,7 +66,7 @@ const Reservation = () => {
                     <img src={data.url} className="card-img-top" alt="..." />
                     <div className={`${width<438 ? 'card-img-overlay' : 'card-body'}`}>
                         <h5 className="card-title">{data.tittle}</h5>
-                        <button href="#" className="btn ">رزرو</button>
+                        <button href="#" className="btn btn-primary " >رزرو</button>
                     </div>
                 </div>
           
