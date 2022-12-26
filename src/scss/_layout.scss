@@ -10,6 +10,12 @@
     background: rgb(255, 255, 255);
     background: linear-gradient(148deg, rgba(255, 255, 255, 1) 0%, rgba(255, 243, 226, 1) 50%, rgba(239, 245, 255, 1) 100%);
 }
+.selected{
+    color: $color-cyan !important;
+}
+.unSelected{
+    color:$color-gray !important ; 
+}
 
 .page {
     width: 100%;
