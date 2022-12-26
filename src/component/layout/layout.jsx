@@ -43,15 +43,15 @@ const Layout = () => {
         setState({
             activeFilter: filterId,
         });
-      
+
     }
     // const [active, setActive] = useState(false);
-    const [state, setState] = useState({falseactiveFilter: 0});
-    
+    const [state, setState] = useState({ falseactiveFilter: 0 });
+
     const handleClick = (e) => {
-       e.target.classList.toggle('selected');
+        e.target.classList.toggle('selected');
         // setActive(!active);
-      };
+    };
 
     return (
         <div className="page">
@@ -69,14 +69,16 @@ const Layout = () => {
                         <span className="icon-user" />
                     </div>
                     <ul className="items">
-                        <li className={`${state.activeFilter === 1 ? 'selected': ''}`} onClick={(e) => filter(e, 1)}>صفحه نخست<span className="icon-PardikHouse" /></li>
-                        <li className={`${state.activeFilter === 2 ? 'selected': ''}`} onClick={(e) => filter(e, 2)} >پیام ها<span className="icon-announcement" /></li>
-                        <Link to={'/resevtion'}>
-                            <li className={`${state.activeFilter === 3 ? 'selected': ''} li reservtion`} onClick={(e) => filter(e, 3)}>رزرو سرویس<span className="icon-reservation" /></li>
+                        <Link to={'/'}>
+                            <li className={`${state.activeFilter === 1 ? 'selected' : ''}`} onClick={(e) => filter(e, 1)}>صفحه نخست<span className="icon-PardikHouse" /></li>
                         </Link>
-                        <li className={`${state.activeFilter === 4 ? 'selected': ''}`} onClick={(e) => filter(e, 4)}>پرداخت شارژ/بدهی<span className="icon-payment" /></li>
-                        <li className={`${state.activeFilter === 5 ? 'selected': ''}`} onClick={(e) => filter(e, 5)}>لیست تراکنش ها<span className="icon-bill" /></li>
-                        <li className={`${state.activeFilter === 6 ? 'selected': ''} li exit`}onClick={(e) => filter(e, 6)} >خروج<span className="icon-exit" /></li>
+                        <li className={`${state.activeFilter === 2 ? 'selected' : ''}`} onClick={(e) => filter(e, 2)} >پیام ها<span className="icon-announcement" /></li>
+                        <Link to={'/resevtion'}>
+                            <li className={`${state.activeFilter === 3 ? 'selected' : ''} li reservtion`} onClick={(e) => filter(e, 3)}>رزرو سرویس<span className="icon-reservation" /></li>
+                        </Link>
+                        <li className={`${state.activeFilter === 4 ? 'selected' : ''}`} onClick={(e) => filter(e, 4)}>پرداخت شارژ/بدهی<span className="icon-payment" /></li>
+                        <li className={`${state.activeFilter === 5 ? 'selected' : ''}`} onClick={(e) => filter(e, 5)}>لیست تراکنش ها<span className="icon-bill" /></li>
+                        <li className={`${state.activeFilter === 6 ? 'selected' : ''} li exit`} onClick={(e) => filter(e, 6)} >خروج<span className="icon-exit" /></li>
                     </ul>
                 </div>
             </div>
