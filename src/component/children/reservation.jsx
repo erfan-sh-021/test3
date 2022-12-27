@@ -60,14 +60,14 @@ const Reservation = () => {
     }, []);
     // console.log(width)
     const list = data.map((data) => {
-        // console.log(data.id)
+        // console.log(data.tittle)
         return (
 
             <div className="card " key={data.id}>
                 <img src={data.url} className="card-img-top" alt="..." />
                 <div className={`${width < 438 ? 'card-img-overlay' : 'card-body'}`}>
                     <h5 className="card-title">{data.tittle}</h5>
-                    <Link to={'/itemSelected'}>
+                    <Link to={'/itemSelected'} state={{from: data.tittle}}>
                         <button href="#" className="btn btn-primary " >رزرو</button>
                     </Link>
                 </div>
