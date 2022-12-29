@@ -12,6 +12,11 @@ import '../../assets/fonts/icomoon/style.css';
 // })
 // console.log(iconMenu)
 const Layout = () => {
+    const menu = document.querySelector('.menu');
+    const [state, setState] = useState({ falseactiveFilter: 0 });
+    const [click, setClick] = useState(false);
+    const [mobileWidth, setMobileWidth] = useState(false);
+    const [width, setWidth] = useState(window.innerWidth);
     useEffect(() => {
         const iconMenu = document.querySelector('.icon-menu');
         const iconMenuCloseX = document.querySelector('.icon-closeX');
@@ -35,23 +40,30 @@ const Layout = () => {
             // menu.classList.add('deactive');
             iconMenuCloseX.classList.add('deactive');
             iconMenu.classList.remove('deactive');
+            // setClick(true)
         })
 
-
+        // if (window.innerWidth < 427) {
+        //     setMobileWidth(true);
+            
+        // }
+        
+        const handleResizeWindow = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleResizeWindow);
+        
     }, [])
+
+    // if(click && mobileWidth === true){
+    //     menu.classList.add('deactive')
+    // }
+
     const filter = (e, filterId) => {
         setState({
             activeFilter: filterId,
         });
 
     }
-    // const [active, setActive] = useState(false);
-    const [state, setState] = useState({ falseactiveFilter: 0 });
-
-    const handleClick = (e) => {
-        e.target.classList.toggle('selected');
-        // setActive(!active);
-    };
+   
 
     return (
         <div className="page">
@@ -74,7 +86,7 @@ const Layout = () => {
                         </Link>
                         <li className={`${state.activeFilter === 2 ? 'selected' : ''}`} onClick={(e) => filter(e, 2)} >پیام ها<span className="icon-announcement" /></li>
                         <Link to={'/resevtion'}>
-                            <li className={`${state.activeFilter === 3 ? 'selected' : ''} li reservtion`} onClick={(e) => filter(e, 3)}>رزرو سرویس<span className="icon-reservation" /></li>
+                            <li className={`${state.activeFilter === 3 ? 'selected' : ''} li reservtion`} onClick={(e) => filter(e, 3)} >رزرو سرویس<span className="icon-reservation" /></li>
                         </Link>
                         <li className={`${state.activeFilter === 4 ? 'selected' : ''}`} onClick={(e) => filter(e, 4)}>پرداخت شارژ/بدهی<span className="icon-payment" /></li>
                         <li className={`${state.activeFilter === 5 ? 'selected' : ''}`} onClick={(e) => filter(e, 5)}>لیست تراکنش ها<span className="icon-bill" /></li>
