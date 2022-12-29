@@ -40,22 +40,22 @@ const Layout = () => {
             // menu.classList.add('deactive');
             iconMenuCloseX.classList.add('deactive');
             iconMenu.classList.remove('deactive');
-            // setClick(true)
+            setClick(true)
         })
 
-        // if (window.innerWidth < 427) {
-        //     setMobileWidth(true);
+        if (window.innerWidth < 427) {
+            setMobileWidth(true);
             
-        // }
+        }
         
         const handleResizeWindow = () => setWidth(window.innerWidth);
         window.addEventListener("resize", handleResizeWindow);
         
     }, [])
 
-    // if(click && mobileWidth === true){
-    //     menu.classList.add('deactive')
-    // }
+    if(click && mobileWidth === true){
+        menu.classList.add('deactive')
+    }
 
     const filter = (e, filterId) => {
         setState({
