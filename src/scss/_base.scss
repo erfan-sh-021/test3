@@ -10,12 +10,16 @@ $color-white:#fff;
 $color-gray:#707070;
 $color-cyan:#05C0E6;
 
-
 // --------------------fontSize---------------------------
+$desktop-menu-fontSize: 15px;
+$desktop-xs-menu-fontSize: 20px;
+$tablet-menu-fontSize: 12px;
+// --------------------iconSize---------------------------
 $tablet-icons-size:25px;
 $mobile-icons-size:35px;
-$desktop-menu-fontSize: 15px;
-$tablet-menu-fontSize: 12px;
+$desktop-icons-size:35px;
+$desktop-xs-icons-size:45px;
+
 // ----------------------mixin-----------------------------
 @mixin backgroundColor {
     background: rgb(255,255,255);

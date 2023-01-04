@@ -2,35 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 // import '../../scss/main.scss';
 
-
-const data = [
-    {
-        id: 0,
-        tittle: 'سونا',
-        url: require('../../assets/img/react.png')
-    },
-    {
-        id: 1,
-        tittle: 'سینما',
-        url: require('../../assets/img/react.png')
-    },
-    {
-        id: 2,
-        tittle: 'استخر',
-        url: require('../../assets/img/react.png')
-    },
-    {
-        id: 3,
-        tittle: 'سالن بدنسازی',
-        url: require('../../assets/img/react.png')
-    },
-    {
-        id: 4,
-        tittle: 'سالن همایش',
-        url: require('../../assets/img/react.png')
-    }
-]
-const Reservation = () => {
+const Reservation = ({props}) => {
     const [width, setWidth] = useState(window.innerWidth);
     const breakPoint = 427;
     useEffect(() => {
@@ -62,17 +34,14 @@ const Reservation = () => {
         };
         
     }, []);  
-    // console.log(width)
-    const list = data.map((data) => {
-        // console.log(data.tittle)
+    const list = props.map((data) => {
         return (
-
             <div className="card " key={data.id}>
-                <img src={data.url} className="card-img-top" alt="..." />
+                <img src={data.imageUrl} className="card-img-top " alt="..." />
                 <Link to={'/itemSelected'} state={{ data: data }}>
                     <div className={`${width < 438 ? 'card-img-overlay' : 'card-body'}`}>
-                        <h5 className="card-title">{data.tittle}</h5>
-                        <Link to={'/itemSelected'} >
+                        <h5 className="card-title">{data.title}</h5>
+                        <Link to={'/itemSelected'} state={{ data: data }}>
                             <button href="#" className="btn btn-primary " >رزرو</button>
                         </Link>
                     </div>

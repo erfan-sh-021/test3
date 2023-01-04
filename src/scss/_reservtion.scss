@@ -5,11 +5,12 @@
 .card {
     width: 9rem !important;
 }
+.card-img-top{
+    height: 110px;
+    
+}
 
 @media only screen and (min-width: 769px) {
-    .card-group {
-        margin-top: 15px;
-    }
 
     .card {
         margin-top: 15px !important;
@@ -45,7 +46,9 @@
 @media only screen and (min-width: 426px) and (max-width: 768px) {
     .card-group {
         margin-top: 30px;
+        justify-content: center;
     }
+
 
     .card {
         padding: 0 !important;
