@@ -80,22 +80,26 @@
         // align-content: center;
     }
 
-    .card {
-        text-align: center;
-        border: none !important;
-        background: $color-cyan  !important;
-        color: white;
-        font-size: 16px;
-        min-width: 143px;
-        max-height: 116px;
-        padding: 5px !important;
+    .resevtionItem {
+        .card {
+            text-align: center;
+            border: none !important;
+            background: $color-cyan  !important;
+            color: white;
+            font-size: 16px;
+            min-width: 143px;
+            max-height: 116px;
+            padding: 5px !important;
+        }
+
+        .row {
+            flex-wrap: nowrap !important;
+            justify-content: flex-start !important;
+            align-items: center !important;
+        }
+
     }
 
-    .row {
-        flex-wrap: nowrap !important;
-        justify-content: flex-start !important;
-        align-items: center !important;
-    }
 
 }
 
@@ -110,13 +114,15 @@
 }
 
 @media only screen and (min-width: 426px) {
-    .dateHeader{
+    .dateHeader {
         display: none;
     }
-    .resevtionItem{
+
+    .resevtionItem {
         display: none;
     }
-    .reservationBottom{
+
+    .reservationBottom {
         display: none;
     }
 }

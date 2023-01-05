@@ -9,28 +9,31 @@ const ResevtionDate = () => {
                 <p>
                     لطفا ساعت مورد نظرتان را انتخاب کنید
                 </p>
-                <div className="reserveCart row">
-                    <div className="card">
-                        <span>17:00 - 18:00 </span>
-                        انتخاب شده توسط شما
-                        <span>هزیه:150000 ریال</span>
-                    </div>
-                    <div className="card">
-                        <span>17:00 - 18:00 </span>
-                        انتخاب شده توسط شما
-                        <span>هزیه:150000 ریال</span>
-                    </div>
-                    <div className="card">
-                        <span>17:00 - 18:00 </span>
-                        انتخاب شده توسط شما
-                        <span>هزیه:150000 ریال</span>
-                    </div>
-                    <div className="card">
-                        <span>17:00 - 18:00 </span>
-                        انتخاب شده توسط شما
-                        <span>هزیه:150000 ریال</span>
+                <div className="resevtionDateGroupe">
+                    <div className="reserveCart row">
+                        <div className="card">
+                            <span>17:00 - 18:00 </span>
+                            انتخاب شده توسط شما
+                            <span>هزیه:150000 ریال</span>
+                        </div>
+                        <div className="card">
+                            <span>17:00 - 18:00 </span>
+                            انتخاب شده توسط شما
+                            <span>هزیه:150000 ریال</span>
+                        </div>
+                        <div className="card">
+                            <span>17:00 - 18:00 </span>
+                            انتخاب شده توسط شما
+                            <span>هزیه:150000 ریال</span>
+                        </div>
+                        <div className="card">
+                            <span>17:00 - 18:00 </span>
+                            انتخاب شده توسط شما
+                            <span>هزیه:150000 ریال</span>
+                        </div>
                     </div>
                 </div>
+
             </div>
             <div className="reservationBottom">
                 <div className="reserveTime"></div>
