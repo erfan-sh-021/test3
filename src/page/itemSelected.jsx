@@ -24,7 +24,71 @@ const ItemSelected = () => {
                     />
                 </div>
                 <div className="rightItem">
+                    <div className="itemsHeader">فروردین 1401 : سانس اختصاصی 12</div>
+                    <div className="cards">
+                        <div className="row">
+                            <div className="card">
+                                <span>17:00 - 18:00 </span>
+                                برای رزرو کلیک کنید
+                                <span>هزیه:150000 ریال</span>
+                            </div>
+                            <div className="card">
+                                <span>17:00 - 18:00 </span>
+                                برای رزرو کلیک کنید
+                                <span>هزیه:150000 ریال</span>
+                            </div>
+                            <div className="card">
+                                <span>17:00 - 18:00 </span>
+                                برای رزرو کلیک کنید
+                                <span>هزیه:150000 ریال</span>
+                            </div>
+                            <div className="card">
+                                <span>17:00 - 18:00 </span>
+                                برای رزرو کلیک کنید
+                                <span>هزیه:150000 ریال</span>
+                            </div>
+                            <div className="card">
+                                <span>17:00 - 18:00 </span>
+                                برای رزرو کلیک کنید
+                                <span>هزیه:150000 ریال</span>
+                            </div>
+                            <div className="card">
+                                <span>17:00 - 18:00 </span>
+                                برای رزرو کلیک کنید
+                                <span>هزیه:150000 ریال</span>
+                            </div>
+                            <div className="card">
+                                <span>17:00 - 18:00 </span>
+                                برای رزرو کلیک کنید
+                                <span>هزیه:150000 ریال</span>
+                            </div>
+                            <div className="card">
+                                <span>17:00 - 18:00 </span>
+                                برای رزرو کلیک کنید
+                                <span>هزیه:150000 ریال</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="itemBottom">
+                        <div className="rightSection">
+                            <p>تعدادساعت های انتخاب شده : <span>3</span></p>
+                            <p>هزینه کل : <span>350000</span>ریال</p>
+                            <button className="btn">تایید رزرو</button>
+                        </div>
+                        <div className="leftSection">
+                            <div className="payButton">
+                                هم اکنون پرداخت شود
+                                <div className="circle"></div>
+                            </div>
+                            <div className="payButton">
+                                اضافه شدن به بدهی شارژ ماهیانه
+                                <div className="circle"></div>
+                            </div>
 
+
+                        </div>
+                    </div>
                 </div>
 
             </div>

@@ -35,7 +35,7 @@
 
     .itemHeader {
         p {
-                @include itemHeader(); 
+            @include itemHeader();
         }
     }
 
@@ -149,5 +149,86 @@
 
     .rmdp-wrapper {
         margin: 40px 0 0 30px;
+    }
+}
+
+@media only screen and (min-width: 768px)  {
+    .card{
+        font-size: 12px;
+        width: 107px !important;
+        padding: 6px !important;
+    }
+    .row{
+        margin:0 !important;
+    }
+    .leftItem {
+        float: left;
+    }
+
+    .rightItem {
+        float: right;
+        width: 71%;
+        margin-top: 35px;
+        background: white;
+        border-radius: 10px;
+        margin-right: 2%;
+    }
+
+    .itemsHeader {
+        text-align: center;
+        padding: 12px 0 20px 0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .cards {
+        width: 97%;
+        height: 460px;
+        background: rgb(18, 67, 87);
+        margin: 0 auto;
+    }
+    
+    .rightSection{
+        float:right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0 17px 17px 0;
+        button{
+            background: $color-cyan;
+            color:white;
+            width: 170px;
+            border-radius: 20px;
+
+        }
+        hr{
+            border: 1px solid;
+    width: 97%;
+    margin: 22px auto;
+    border-radius: 15px;
+        }
+    }
+    .leftSection{
+        float:left;
+        margin: 30px 0 0 12px;
+    }
+    .payButton{
+        background: #E8E8E8;
+        color: black;
+        border-radius: 130px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 10px;
+        width: 300px;
+        height: 36px;
+        padding-right: 4px;
+        .circle{
+            background: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
     }
 }

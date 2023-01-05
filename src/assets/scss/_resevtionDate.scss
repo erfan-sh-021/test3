@@ -2,9 +2,9 @@
     height: 100%;
 }
 
-.menu {
-    display: none;
-}
+// .menu {
+//     display: none;
+// }
 
 @media only screen and (max-width: 425px) {
     .dateHeader {
@@ -106,5 +106,17 @@
             width: 130px;
 
         }
+    }
+}
+
+@media only screen and (min-width: 426px) {
+    .dateHeader{
+        display: none;
+    }
+    .resevtionItem{
+        display: none;
+    }
+    .reservationBottom{
+        display: none;
     }
 }
