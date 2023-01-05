@@ -15,7 +15,7 @@ build-push:
     - docker build -t $CI_REGISTRY_REPO/$IMAGE_NAME:$CI_PIPELINE_ID . 
     - docker push $CI_REGISTRY_REPO/$IMAGE_NAME:$CI_PIPELINE_ID
   only:
-    - develop
+    - master
 
 # deploy:
 #   stage: deploy
