@@ -1,5 +1,5 @@
 # # Step 1
-FROM node:alpine as build-step
+FROM node:17-alpine as build-step
 RUN mkdir /app
 WORKDIR /app
 COPY package.json /app
@@ -8,7 +8,7 @@ COPY . /app
 RUN npm run build
  
 # # Stage 2
-FROM nginx:1.21.6-alpine
+FROM nginx:1.19.0
 COPY --from=build-step /app/build /usr/share/nginx/html
 
 #COPY --from=build /app/build /usr/share/nginx.html
