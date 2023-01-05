@@ -4,13 +4,14 @@
 //     src:url('../fonts/Sahel.ttf') format('ttf'),url('../fonts/Sahel.woff') format('woff');
 //     font-weight: normal;
 //    }
+// --------------------color---------------------------
 
 $color-black:black;
 $color-white:#fff;
 $color-gray:#707070;
 $color-cyan:#05C0E6;
-
 // --------------------fontSize---------------------------
+$md-fontSize: 15px;
 $desktop-menu-fontSize: 15px;
 $desktop-xs-menu-fontSize: 20px;
 $tablet-menu-fontSize: 12px;
@@ -20,8 +21,22 @@ $mobile-icons-size:35px;
 $desktop-icons-size:35px;
 $desktop-xs-icons-size:45px;
 
+
+
 // ----------------------mixin-----------------------------
 @mixin backgroundColor {
     background: rgb(255,255,255);
     background: linear-gradient(148deg, rgba(255,255,255,1) 0%, rgba(255,243,226,1) 50%, rgba(239,245,255,1) 100%);
+}
+@mixin itemHeader {
+    background: black;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }

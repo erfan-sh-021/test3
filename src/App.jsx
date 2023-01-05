@@ -1,41 +1,13 @@
 import Layout from './component/layout/layout';
-import './scss/main.scss';
+import './assets/scss/main.scss';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Reservation from './component/children/reservation';
-import ItemSelected from './component/children/itemSelected';
+import Reservation from './page/reservation';
+import ItemSelected from './page/itemSelected';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-const data = [
-  {
-      id: 0,
-      tittle: 'سونا',
-      url: require('./assets/img/react.png')
-  },
-  {
-      id: 1,
-      tittle: 'سینما',
-      url: require('./assets/img/react.png')
-  },
-  {
-      id: 2,
-      tittle: 'استخر',
-      url: require('./assets/img/react.png')
-  },
-  {
-      id: 3,
-      tittle: 'سالن بدنسازی',
-      url: require('./assets/img/react.png')
-  },
-  {
-      id: 4,
-      tittle: 'سالن همایش',
-      url: require('./assets/img/react.png')
-  }
-]
-
-// custom header
+import ResevtionDate from './page/resevtionDate/resevtionDate';
 
 
 
@@ -64,11 +36,11 @@ useEffect(()=>{
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route path='/resevtion' element={<Reservation props={apiData}/>} />
-            <Route path='/itemSelected' element={<ItemSelected props={data}/>} />
+            <Route path='/itemSelected' element={<ItemSelected props={apiData}/>} />
+            <Route path='/reservationDate' element={<ResevtionDate/>} />
           </Route>
         </Routes>
       </BrowserRouter>
-      {/* <Reservation/> */}
     </>
   );
 }
