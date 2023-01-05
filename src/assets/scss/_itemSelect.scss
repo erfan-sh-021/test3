@@ -153,20 +153,14 @@
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .card {
-        font-size: 12px;
-        width: 107px !important;
-        padding: 6px !important;
-    }
-
-    .row {
-        margin: 0 !important;
-    }
+ 
 
     .leftItem {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        height: 500px;
+        
     }
 
     .rightItem {
@@ -187,6 +181,15 @@
         height: 250px;
         background: rgb(18, 67, 87);
         margin: 0 auto;
+        .card {
+            font-size: 12px;
+            width: 107px !important;
+            padding: 6px !important;
+        }
+    
+        .row {
+            margin: 0 !important;
+        }
     }
 
     .rightSection {
@@ -239,14 +242,7 @@
     }
 }
 @media only screen and (min-width: 1024px)  {
-    .card{
-        font-size: 12px;
-        width: 107px !important;
-        padding: 6px !important;
-    }
-    .row{
-        margin:0 !important;
-    }
+
     .leftItem {
         float: left;
     }
@@ -272,6 +268,14 @@
         height: 460px;
         background: rgb(18, 67, 87);
         margin: 0 auto;
+        .card{
+            font-size: 12px;
+            width: 107px !important;
+            padding: 6px !important;
+        }
+        .row{
+            margin:0 !important;
+        }
     }
 
     .rightSection{
