@@ -39,7 +39,7 @@ const Reservation = ({props}) => {
             <div className="card " key={data.id}>
                 <img src={data.imageUrl} className="card-img-top " alt="..." />
                 <Link to={'/itemSelected'} state={{ data: data }}>
-                    <div className={`${width < 438 ? 'card-img-overlay' : 'card-body'}`}>
+                    <div className={`${width < 769 ? 'card-img-overlay' : 'card-body'}`}>
                         <h5 className="card-title">{data.title}</h5>
                         <Link to={'/itemSelected'} state={{ data: data }}>
                             <button href="#" className="btn btn-primary " >رزرو</button>

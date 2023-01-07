@@ -9,7 +9,7 @@
     height: 110px;
     
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
     .menu {}
 
     .card {
@@ -42,47 +42,52 @@
             display: none;
         }
     }
-
+    .card-group{
+        justify-content: center;
+    }
     .row {
         justify-content: center;
+        width: 100%;
+        margin: 0 !important;
     }
+    
 
 }
-@media only screen and (min-width: 426px) and (max-width: 768px) {
-    .card-group {
-        margin-top: 30px;
-        justify-content: center;
-    }
+// @media only screen and (min-width: 426px) and (max-width: 768px) {
+//     .card-group {
+//         margin-top: 30px;
+//         justify-content: center;
+//     }
 
 
-    .card {
-        padding: 0 !important;
-        width: 10rem !important;
-        margin: 10px 5px 5px 5px;
-        text-align: center;
-        border: none !important;
-    }
+//     .card {
+//         padding: 0 !important;
+//         width: 10rem !important;
+//         margin: 10px 5px 5px 5px;
+//         text-align: center;
+//         border: none !important;
+//     }
 
-    .card-title {
-        font-size: 15px;
-        color: black;
-    }
+//     .card-title {
+//         font-size: 15px;
+//         color: black;
+//     }
 
-    .card-body {
+//     .card-body {
 
-        button {
-            width: 100%;
-            justify-content: center;
-            background: $color-cyan;
-            border: none;
-            padding: 0 0 7px 0;
-        }
-    }
+//         button {
+//             width: 100%;
+//             justify-content: center;
+//             background: $color-cyan;
+//             border: none;
+//             padding: 0 0 7px 0;
+//         }
+//     }
 
-    .row {
-        justify-content: center;
-    }
-}
+//     .row {
+//         justify-content: center;
+//     }
+// }
 @media only screen and (min-width: 769px) {
 
     .card {

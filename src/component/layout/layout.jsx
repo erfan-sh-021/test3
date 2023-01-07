@@ -24,13 +24,14 @@ const Layout = () => {
         const menu = document.querySelector('.menu');
         const reservtion = document.querySelector('.reservtion');
         const li = document.querySelector('.li');
-        iconMenu.addEventListener('touchend', () => {
+        iconMenu.addEventListener('click', () => {
+            console.log('clicked')
             menu.classList.remove('background')
             menuItems.classList.remove('deactive');
             iconMenu.classList.add('deactive');
             iconMenuCloseX.classList.remove('deactive');
         })
-        iconMenuCloseX.addEventListener('touchend', () => {
+        iconMenuCloseX.addEventListener('click', () => {
             menu.classList.add('background')
             menuItems.classList.add('deactive');
             iconMenuCloseX.classList.add('deactive');
@@ -43,7 +44,7 @@ const Layout = () => {
             setClick(true)
         })
 
-        if (window.innerWidth < 427) {
+        if (window.innerWidth < 769) {
             setMobileWidth(true);
             
         }
@@ -56,7 +57,7 @@ const Layout = () => {
     if(click && mobileWidth === true){
         menu.classList.add('deactive')
     }
-
+    // ---------------for active color in menu------------------
     const filter = (e, filterId) => {
         setState({
             activeFilter: filterId,
