@@ -25,6 +25,7 @@
     .left{
         @include backgroundColor();
         height: 100%;
+        // display: none;
     }
     .items {
         list-style: none;
