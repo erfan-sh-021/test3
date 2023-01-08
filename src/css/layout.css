@@ -1,0 +1,11 @@
+.menuLogo > span {
+  width: 250px;
+  height: 60px; }
+
+.main {
+  width: 250px;
+  height: 1080px;
+  float: right; }
+
+.items {
+  list-style: none; }

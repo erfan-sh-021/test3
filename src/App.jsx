@@ -3,8 +3,8 @@ import './assets/scss/main.scss';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Reservation from './page/reservation';
-import ItemSelected from './page/itemSelected';
+import Reservation from './page/reservation/reservation';
+import ItemSelected from './page/itemSelected/itemSelected';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import ResevtionDate from './page/resevtionDate/resevtionDate';
