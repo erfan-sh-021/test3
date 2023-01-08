@@ -1,0 +1,377 @@
+.active {
+    display: block !important;
+}
+
+.deactive {
+    display: none !important;
+}
+
+.background {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(148deg, rgba(255, 255, 255, 1) 0%, rgba(255, 243, 226, 1) 50%, rgba(239, 245, 255, 1) 100%);
+}
+.selected{
+    color: $color-cyan !important;
+}
+.unSelected{
+    color:$color-gray !important ; 
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .left{
+        @include backgroundColor();
+        height: 100%;
+        display: none;
+    }
+    .items {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 15px;
+
+        a {
+            text-decoration: none !important;
+        }
+
+        li {
+            margin: 0 40px 18px 0;
+            font-size: $desktop-menu-fontSize;
+            color: $color-gray;
+
+            span {
+                font-size: $mobile-icons-size;
+                padding-left: 1.5rem;
+            }
+        }
+
+        .exit {
+            color: #E605D0;
+        }
+    }
+
+    .menuLogo>img {
+        width: 160px;
+        height: 80px;
+        display: block;
+        margin: 0 auto 10px auto;
+
+    }
+
+    .menu {
+        width: 100%;
+        min-height: 100%;
+
+    }
+
+    .navbarMenu {
+        background: $color-white;
+        width: 100%;
+        height: 30px;
+        padding: 4px 0 0 7px;
+    }
+
+    .user {
+        @include backgroundColor();
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 70px;
+
+        .icon-user {
+            font-size: $mobile-icons-size;
+            background: $color-cyan;
+            width: 55px;
+            display: flex;
+            height: 55px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            color: white;
+            margin: 0 32px 0 14px;
+            border: 1px solid #000
+        }
+
+        .userDetails {
+            text-align: center;
+            height: 47px;
+
+            h4 {
+                font-size: 17px;
+                // font-weight: 400;
+            }
+
+            p {
+                font-size: 11px;
+            }
+        }
+        .card-group{
+            margin-top: 10px;
+        }
+    }
+}
+// @media only screen and (min-width: 426px) and (max-width: 768px) {
+//     .left {
+//         width: 75%;
+//         height: 100%;
+//         float: left;
+//     }
+
+//     .page {
+//         @include backgroundColor();
+//     }
+
+//     .navbarMenu {
+//         display: none
+//     }
+
+//     .menu {
+//         background: $color-white;
+//         float: right;
+//         height: 100%;
+//         width: 25%;
+//         // max-width: 200px;
+
+//         .menuItems {
+//             min-height: 624px !important;
+//             width: 100%;
+//             height: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             position: relative;
+//         }
+//     }
+
+//     .menuLogo>img {
+//         width: 100px;
+//         height: 50px;
+//         margin: 25px auto;
+//         display: block;
+//     }
+
+//     .items {
+//         list-style: none;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-end;
+//         margin-top: 10px;
+
+//         a {
+//             text-decoration: none !important;
+//         }
+
+//         li {
+//             margin: 0 15px 18px 0;
+//             font-size: $tablet-menu-fontSize;
+//             color: $color-gray;
+
+//             span {
+//                 font-size: $tablet-icons-size;
+//                 padding-left: 1rem;
+//             }
+//         }
+
+//         .exit {
+//             color: #E605D0;
+//         }
+//     }
+
+//     .user {
+//         @include backgroundColor();
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: flex-end;
+//         align-items: center;
+//         height: 70px;
+//         width: 100%;
+//         order: 2;
+//         position: absolute;
+//         bottom: 0;
+//         margin-bottom: 30px;
+
+//         .icon-user {
+//             font-size: $mobile-icons-size;
+//             background: $color-cyan;
+//             width: 45px;
+//             display: flex;
+//             height: 45px;
+//             justify-content: center;
+//             align-items: center;
+//             border-radius: 40px;
+//             color: white;
+//             margin: 0 32px 0 14px;
+//             border: 1px solid #000
+//         }
+
+//         .userDetails {
+//             text-align: center;
+//             height: 47px;
+
+//             h4 {
+//                 font-size: $tablet-menu-fontSize;
+//                 // font-weight: 400;
+//             }
+
+//             p {
+//                 font-size: 11px;
+//             }
+//         }
+//     }
+// }
+@media only screen and (min-width: 1024px) {
+    .left {
+        width: 82%;
+        height: 100%;
+        float: left;
+    }
+
+    .page {
+        @include backgroundColor();
+    }
+
+    .navbarMenu {
+        display: none;
+    }
+
+    .menu {
+        background: $color-white;
+        float: right;
+        height: 100%;
+        width: 18%;
+
+        .menuItems {
+            min-height: 624px !important;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+    }
+
+    .menuLogo>img {
+        width: 100px;
+        height: 50px;
+        margin: 25px auto;
+        display: block;
+    }
+
+    .items {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 10px;
+        padding-left: 0;
+
+        a {
+            text-decoration: none !important;
+        }
+
+        li {
+            margin: 0 23px 18px 0;
+            font-size: $tablet-menu-fontSize;
+            color: $color-gray;
+
+            span {
+                font-size: 30px;
+                padding-left: 1rem;
+            }
+        }
+
+        .exit {
+            color: #E605D0;
+        }
+    }
+
+    .user {
+        @include backgroundColor();
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+        order: 2;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 30px;
+
+        .icon-user {
+            font-size: $mobile-icons-size;
+            background: $color-cyan;
+            width: 45px;
+            display: flex;
+            height: 45px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            color: white;
+            margin: 0 32px 0 14px;
+            border: 1px solid #000
+        }
+
+        .userDetails {
+            text-align: center;
+            height: 47px;
+
+            h4 {
+                font-size: $desktop-menu-fontSize;
+                // font-weight: 400;
+            }
+
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .menu{
+        width:17%;
+        
+    }
+    .left{
+        width: 83%;
+    }
+}
+@media only screen and (min-width: 1441px) {
+    .menu{
+        width:19%;
+    }
+    .left{
+        width: 81%;
+    }
+    li{
+        font-size: $desktop-xs-menu-fontSize !important;
+        margin: 0 52px 50px 0 !important;
+        span{
+            font-size: $desktop-xs-icons-size !important;
+        }
+    }
+    .menuLogo{
+        img{
+            width: 150px;
+            height: 80px;
+        }
+    }
+    .userDetails{
+        h4{
+            font-size: 21px !important;
+        }
+        p{
+            font-size: 17px !important;
+        }
+    }
+    .user{
+        height: 100px;
+    }
+    .icon-user{
+        margin: 0 53px 0 14px !important;
+    }
+}

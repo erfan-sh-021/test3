@@ -13,10 +13,9 @@ import '../../assets/fonts/icomoon/style.css';
 // console.log(iconMenu)
 const Layout = () => {
     const menu = document.querySelector('.menu');
-    // const left = document.querySelector('.left');
+    const left = document.querySelector('.left');
     const [state, setState] = useState({ falseactiveFilter: 0 });
     const [click, setClick] = useState(false);
-    const [liClick, setLiClick] = useState(false);
     const [mobileWidth, setMobileWidth] = useState(false);
     const [width, setWidth] = useState(window.innerWidth);
     useEffect(() => {
@@ -25,7 +24,8 @@ const Layout = () => {
         const menuItems = document.querySelector('.menuItems');
         const menu = document.querySelector('.menu');
         const reservtion = document.querySelector('.reservtion');
-        // const li = document.querySelector('.li');
+        const li = document.querySelectorAll('.li');
+        
         iconMenu.addEventListener('click', () => {
             // console.log('clicked')
             menu.classList.remove('background')
@@ -45,11 +45,6 @@ const Layout = () => {
             iconMenu.classList.remove('deactive');
             setClick(true)
         })
-        // li.addEventListener(('click',(e)=>{
-        //     // setLiClick(true);
-        //     console.log('click');
-        // }))
-        // console.log(li)
         if (window.innerWidth < 769) {
             setMobileWidth(true);
             
@@ -62,6 +57,7 @@ const Layout = () => {
 
     if(click && mobileWidth === true){
         menu.classList.add('deactive')
+        left.classList.add('active')
     }
     // if(liClick && mobileWidth === true){
     //     left.classList.add('deactive')
@@ -79,7 +75,7 @@ const Layout = () => {
         <div className="page">
             <div className="navbarMenu"><span className="icon-menu" /><span className="icon-closeX deactive" /></div>
             <div className="menu background">
-                <div className="menuItems deactive">
+                <div className="menuItems ">
                     <div className="menuLogo">
                         <img src={require('../../assets/img/Pardik logo landscape.png')} alt="logo" />
                     </div>

@@ -1,5 +1,5 @@
 import Layout from './component/layout/layout';
-import './scss/main.scss';
+import './assets/scss/main.scss';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -25,7 +25,7 @@ const config = {
 useEffect(()=>{
   axios.get(url,config).then((res)=>{
     setApiData(res.data.serviceTypes)
-  console.log(res.data.serviceTypes);
+  // console.log(res.data.serviceTypes);
 }).catch(err =>console.log(err,'is error'));
 
 },[])
