@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import '../../assets/fonts/icomoon/style.css';
+import { useRef } from 'react';
 //////////////////by remove and add
 // iconMenu.addEventListener('touchend', () => {
 //     iconMenu.classList.add('deactive');
@@ -10,58 +11,66 @@ import '../../assets/fonts/icomoon/style.css';
 //     iconMenuCloseX.classList.add('deactive');
 //     iconMenu.classList.remove('deactive');
 // })
-// console.log(iconMenu)
 const Layout = () => {
+    const menuRef = useRef(null)
     const menu = document.querySelector('.menu');
     const left = document.querySelector('.left');
     const [state, setState] = useState({ falseactiveFilter: 0 });
     const [click, setClick] = useState(false);
     const [mobileWidth, setMobileWidth] = useState(false);
     const [width, setWidth] = useState(window.innerWidth);
+    const [iconMenu, setIconMenu] = useState(window.innerWidth);
     useEffect(() => {
         const iconMenu = document.querySelector('.icon-menu');
         const iconMenuCloseX = document.querySelector('.icon-closeX');
         const menuItems = document.querySelector('.menuItems');
         const menu = document.querySelector('.menu');
+        const home = document.querySelector('.home');
         const reservtion = document.querySelector('.reservtion');
-        const li = document.querySelectorAll('.li');
-        
+        home.addEventListener('click',()=>{
+            iconMenuCloseX.classList.add('deactive');
+            iconMenu.classList.remove('deactive');
+        })
         iconMenu.addEventListener('click', () => {
             // console.log('clicked')
-            menu.classList.remove('background')
-            menuItems.classList.remove('deactive');
+            menu.classList.remove('background');
+            menu.classList.remove('deactive');
+            // menuItems.classList.remove('deactive');
             iconMenu.classList.add('deactive');
             iconMenuCloseX.classList.remove('deactive');
         })
         iconMenuCloseX.addEventListener('click', () => {
-            menu.classList.add('background')
-            menuItems.classList.add('deactive');
+            menu.classList.add('background');
+            menu.classList.add('deactive');
+            // menuItems.classList.add('deactive');
             iconMenuCloseX.classList.add('deactive');
             iconMenu.classList.remove('deactive');
         })
         reservtion.addEventListener('click', () => {
-            // menu.classList.add('deactive');
+            if(width<769){
+                menu.classList.add('deactive');
+            }
             iconMenuCloseX.classList.add('deactive');
             iconMenu.classList.remove('deactive');
             setClick(true)
         })
-        if (window.innerWidth < 769) {
+        if (width < 769) {
             setMobileWidth(true);
             
         }
-        
+        if(width>768){
+            menuRef.current.classList.remove('deactive');
+           }
         const handleResizeWindow = () => setWidth(window.innerWidth);
         window.addEventListener("resize", handleResizeWindow);
-        
     }, [])
-
+    
     if(click && mobileWidth === true){
         menu.classList.add('deactive')
         left.classList.add('active')
     }
-    // if(liClick && mobileWidth === true){
-    //     left.classList.add('deactive')
-    // }
+ 
+
     // ---------------for active color in menu------------------
     const filter = (e, filterId) => {
         setState({
@@ -69,12 +78,12 @@ const Layout = () => {
         });
 
     }
-   
+
 
     return (
         <div className="page">
             <div className="navbarMenu"><span className="icon-menu" /><span className="icon-closeX deactive" /></div>
-            <div className="menu background">
+            <div className="menu background" ref={menuRef}>
                 <div className="menuItems ">
                     <div className="menuLogo">
                         <img src={require('../../assets/img/Pardik logo landscape.png')} alt="logo" />
@@ -88,7 +97,7 @@ const Layout = () => {
                     </div>
                     <ul className="items">
                         <Link to={'/'}>
-                            <li className={`${state.activeFilter === 1 ? 'selected' : ''} li`} onClick={(e) => filter(e, 1)}>صفحه نخست<span className="icon-PardikHouse" /></li>
+                            <li className={`${state.activeFilter === 1 ? 'selected' : ''} li home`} onClick={(e) => filter(e, 1)}>صفحه نخست<span className="icon-PardikHouse" /></li>
                         </Link>
                         <li className={`${state.activeFilter === 2 ? 'selected' : ''} li`} onClick={(e) => filter(e, 2)} >پیام ها<span className="icon-announcement" /></li>
                         <Link to={'/resevtion'}>
@@ -100,7 +109,7 @@ const Layout = () => {
                     </ul>
                 </div>
             </div>
-            <div className="left">
+            <div className="left" >
                 <Outlet />
             </div>
         </div>

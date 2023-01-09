@@ -18,8 +18,7 @@ const[apiData,setApiData]=useState([]);
 const url ='https://pbmapi.pardikiot.com/api/ServiceTypes/GetMirrorServiceTypes';
 const config = {
   headers:{
-    'Accept': 'text/plain', 
-    'Authorization': 'Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIzMjhiNGI5Ni05YjY2LTRmZWUtOTA1ZC1hZmIwMWM0OWJhMGUiLCJ1bmlxdWVfbmFtZSI6IjExMDEiLCJVc2VyVHlwZSI6IjIiLCJSZXNpZGVudFVzZXJQYXJlbnRJZCI6ImM2ZjBkYjcxLWEwY2UtNGJmMC05OTBhLTgxMDZhNWMzYzYzMSIsIm5iZiI6MTY3MjYyMzg1MywiZXhwIjoxNjczMjI4NjUzLCJpYXQiOjE2NzI2MjM4NTN9.aAYQxZC7FQJPOzBVGSTeYSExn-mPFpBUKWon1vwzvYlwwak_WsxKqLOg-xkqN71l5sHB4sGj-P9Z7c7qsliUgA'
+    'Authorization': 'Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIzMjhiNGI5Ni05YjY2LTRmZWUtOTA1ZC1hZmIwMWM0OWJhMGUiLCJ1bmlxdWVfbmFtZSI6IjExMDEiLCJVc2VyVHlwZSI6IjIiLCJSZXNpZGVudFVzZXJQYXJlbnRJZCI6ImM2ZjBkYjcxLWEwY2UtNGJmMC05OTBhLTgxMDZhNWMzYzYzMSIsIm5iZiI6MTY3MzI0ODE4OSwiZXhwIjoxNjczODUyOTg5LCJpYXQiOjE2NzMyNDgxODl9.jd1YUEsXv5V7g8xDp00fAAhyoDwDaG5pt4WsOieaK-QmAavdydd1FmLENkVvoq7lWA2KSnDsyZCxdma6YPipig'
   }
 }
 useEffect(()=>{
