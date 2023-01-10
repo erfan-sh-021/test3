@@ -8,7 +8,7 @@ import ItemSelected from './page/itemSelected/itemSelected';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import ResevtionDate from './page/resevtionDate/resevtionDate';
-
+import Announcement from './page/announcemnet/Announcement';
 
 
 function App() {
@@ -37,6 +37,7 @@ useEffect(()=>{
             <Route path='/resevtion' element={<Reservation props={apiData}/>} />
             <Route path='/itemSelected' element={<ItemSelected props={apiData}/>} />
             <Route path='/reservationDate' element={<ResevtionDate/>} />
+            <Route path='/Announcement' element={<Announcement/>} />
           </Route>
         </Routes>
       </BrowserRouter>

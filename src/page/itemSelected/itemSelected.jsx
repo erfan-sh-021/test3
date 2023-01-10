@@ -3,11 +3,17 @@ import { Calendar } from "react-multi-date-picker"
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
 import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const ItemSelected = () => {
     const location = useLocation();
     const { data } = location.state;
+    useEffect(()=>{
+        const rmdpWeek = document.querySelector('.rmdp-day');
 
+        console.log(rmdpWeek)
+    },[])
+    
     return (
         <>
             <div className="itemHeader"><p>لطفا روز مورد نظرتان را انتخاب کنید</p></div>
