@@ -8,11 +8,6 @@ import { useEffect } from "react";
 const ItemSelected = () => {
     const location = useLocation();
     const { data } = location.state;
-    useEffect(()=>{
-        const rmdpWeek = document.querySelector('.rmdp-day');
-
-        console.log(rmdpWeek)
-    },[])
     
     return (
         <>

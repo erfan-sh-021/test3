@@ -26,8 +26,9 @@ const Layout = () => {
         const menuItems = document.querySelector('.menuItems');
         const menu = document.querySelector('.menu');
         const home = document.querySelector('.home');
-        const reservtion = document.querySelector('.reservtion');
-        home.addEventListener('click',()=>{
+        const itemSelect = document.querySelectorAll('.item-select');
+        // console.log(itemSelect)
+        home.addEventListener('click', () => {
             iconMenuCloseX.classList.add('deactive');
             iconMenu.classList.remove('deactive');
         })
@@ -46,30 +47,32 @@ const Layout = () => {
             iconMenuCloseX.classList.add('deactive');
             iconMenu.classList.remove('deactive');
         })
-        reservtion.addEventListener('click', () => {
-            if(width<769){
-                menu.classList.add('deactive');
-            }
-            iconMenuCloseX.classList.add('deactive');
-            iconMenu.classList.remove('deactive');
-            setClick(true)
-        })
+        for (let i = 0; i < itemSelect.length; i++) {
+            itemSelect[i].addEventListener('click', () => {
+                if (width < 769) {
+                    menu.classList.add('deactive');
+                }
+                iconMenuCloseX.classList.add('deactive');
+                iconMenu.classList.remove('deactive');
+                setClick(true)
+            })
+        }
         if (width < 769) {
             setMobileWidth(true);
-            
+
         }
-        if(width>768){
+        if (width > 768) {
             menuRef.current.classList.remove('deactive');
-           }
+        }
         const handleResizeWindow = () => setWidth(window.innerWidth);
         window.addEventListener("resize", handleResizeWindow);
     }, [])
-    
-    if(click && mobileWidth === true){
+
+    if (click && mobileWidth === true) {
         menu.classList.add('deactive')
         left.classList.add('active')
     }
- 
+
 
     // ---------------for active color in menu------------------
     const filter = (e, filterId) => {
@@ -99,9 +102,11 @@ const Layout = () => {
                         <Link to={'/'}>
                             <li className={`${state.activeFilter === 1 ? 'selected' : ''} li home`} onClick={(e) => filter(e, 1)}>صفحه نخست<span className="icon-PardikHouse" /></li>
                         </Link>
-                        <li className={`${state.activeFilter === 2 ? 'selected' : ''} li`} onClick={(e) => filter(e, 2)} >پیام ها<span className="icon-announcement" /></li>
+                        <Link to={'/announcement'}>
+                            <li className={`${state.activeFilter === 2 ? 'selected' : ''} li item-select`} onClick={(e) => filter(e, 2)} >پیام ها<span className="icon-announcement" /></li>
+                        </Link >
                         <Link to={'/resevtion'}>
-                            <li className={`${state.activeFilter === 3 ? 'selected' : ''} li reservtion`} onClick={(e) => filter(e, 3)} >رزرو سرویس<span className="icon-reservation" /></li>
+                            <li className={`${state.activeFilter === 3 ? 'selected' : ''} li item-select`} onClick={(e) => filter(e, 3)} >رزرو سرویس<span className="icon-reservation" /></li>
                         </Link>
                         <li className={`${state.activeFilter === 4 ? 'selected' : ''} li`} onClick={(e) => filter(e, 4)}>پرداخت شارژ/بدهی<span className="icon-payment" /></li>
                         <li className={`${state.activeFilter === 5 ? 'selected' : ''} li`} onClick={(e) => filter(e, 5)}>لیست تراکنش ها<span className="icon-bill" /></li>
