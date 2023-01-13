@@ -1,5 +1,7 @@
 import '../../assets/img/react.png'
 import AnCard from '../../component/announcement/anCard'
+import AnDetails from './anDetails'
+import AnDetails1 from './anDetails1'
 const data = [
     {
         id: 1,
@@ -31,9 +33,9 @@ const data = [
     },
 ]
 const Announcement = () => {
-    const ListData = data.map((data) => {
+    const ListData = data.map((dataList) => {
         // console.log(data)
-        return <AnCard data={data} />
+        return <AnCard data={dataList} />
 
 
     })
@@ -45,7 +47,7 @@ const Announcement = () => {
                             {ListData}
                         </ul>
                     </div>
-                {/* <div className="a-left"></div> */}
+                <div className="a-left"><AnDetails1 data={data}/></div>
             </div>
         </>
     );

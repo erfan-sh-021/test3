@@ -12,6 +12,10 @@
         margin: 15px auto 0 auto;
         width: 230px;
         border-radius: 10px;
+        &:hover{
+            background: $color-cyan;
+            color: white;
+        }
     }
 }
 .an-text{
@@ -43,7 +47,7 @@
         }
     }
     .an-p{
-            font-size: 30px !important;
+            font-size: 25px !important;
         }
     .an-bottom{
         font-size: 22px !important;
@@ -54,5 +58,10 @@
         font-size: 25px !important;
         margin: 35px auto 0 auto !important;
         }
+    }
+}
+@media only screen and (min-width: 769px) {
+    .an-details{
+        display: none;
     }
 }
