@@ -43,21 +43,22 @@
 @media only screen and (min-width: 426px){
     .an-details{
         img{
-            // height: 45% !important;
+            height: 40% !important;
         }
+        button{
+            font-size: 25px !important;
+            margin: 65px auto 0 auto !important;
+            }
     }
     .an-p{
-            font-size: 25px !important;
+            font-size: 20px !important;
         }
     .an-bottom{
         font-size: 22px !important;
 
     }
-    .an-details{
-        button{
-        font-size: 25px !important;
-        margin: 35px auto 0 auto !important;
-        }
+    .an-text{
+        height: 45%;
     }
 }
 @media only screen and (min-width: 769px) {

@@ -129,9 +129,6 @@
     .a-left {
         display: block;
     }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .a-right {
         width: 45%;
         float: right;
@@ -147,5 +144,46 @@
         height: 80%;
         border-radius: 10px;
         background: white;
+    }
+    .an-left{
+        h4{
+            font-size: 13px;
+        }
+        p{
+            font-size: 12px;
+            height: 59px;
+        }
+    }
+}
+
+// @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+// }
+@media only screen and (min-width: 1441px) {
+    .an-left{
+        height: 125px;
+        h4{
+            font-size: 22px;
+        }
+        p{
+            font-size: 20px;
+            height: 100%;
+        }
+    }
+    .a-right {
+        height: 80% !important;
+        padding: 0 10px;
+        background: white;
+        padding-top: 10px;
+        height: 100%;
+
+        img {
+            width: 140px;
+            height: 140px;
+            border-radius: 10px;
+            // float: right;
+        }
+    }
+    .an-li{
+        height: 160px !important;
     }
 }
