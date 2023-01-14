@@ -34,10 +34,8 @@ const data = [
 ]
 const Announcement = () => {
     const ListData = data.map((dataList) => {
-        // console.log(data)
+        // console.log(dataList)
         return <AnCard data={dataList} />
-
-
     })
     return (
         <>
@@ -47,7 +45,9 @@ const Announcement = () => {
                             {ListData}
                         </ul>
                     </div>
-                <div className="a-left"><AnDetails1 data={data}/></div>
+                <div className="a-left">
+                    {/* <AnDetails/> */}
+                </div>
             </div>
         </>
     );

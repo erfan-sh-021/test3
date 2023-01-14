@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 const AnDetails = () => {
     const location = useLocation();
     const data = location.state;
-    // console.log(data);
+    // console.log(dataList);
     return (
         <div className="an-details">
             <img src={data.src} alt="" />
