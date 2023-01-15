@@ -16,7 +16,8 @@ const[apiData,setApiData]=useState([]);
 // console.log(apiData)
 const url ='https://pbmapi.pardikiot.com/api/ServiceTypes/GetMirrorServiceTypes';
 const config = {
-  headers:{
+  headers: { 
+    'Accept': 'text/plain', 
     'Authorization': 'Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIzMjhiNGI5Ni05YjY2LTRmZWUtOTA1ZC1hZmIwMWM0OWJhMGUiLCJ1bmlxdWVfbmFtZSI6IjExMDEiLCJVc2VyVHlwZSI6IjIiLCJSZXNpZGVudFVzZXJQYXJlbnRJZCI6ImM2ZjBkYjcxLWEwY2UtNGJmMC05OTBhLTgxMDZhNWMzYzYzMSIsIm5iZiI6MTY3MzI0ODE4OSwiZXhwIjoxNjczODUyOTg5LCJpYXQiOjE2NzMyNDgxODl9.jd1YUEsXv5V7g8xDp00fAAhyoDwDaG5pt4WsOieaK-QmAavdydd1FmLENkVvoq7lWA2KSnDsyZCxdma6YPipig'
   }
 }
@@ -33,11 +34,11 @@ useEffect(()=>{
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout />}>
-            <Route path='/resevtion' element={<Reservation props={apiData}/>} />
-            <Route path='/itemSelected' element={<ItemSelected props={apiData}/>} />
-            <Route path='/reservationDate' element={<ResevtionDate/>} />
-            <Route path='/announcement' element={<Announcement/>} />
-            <Route path='/anDetails' element={<AnDetails/>} />
+            <Route path='resevtion' element={<Reservation props={apiData}/>} ></Route>
+            <Route path='itemSelected' element={<ItemSelected props={apiData}/>} />
+            <Route path='reservationDate' element={<ResevtionDate/>} />
+            <Route path='announcement' element={<Announcement/>} ></Route>
+            <Route path='anDetails' element={<AnDetails/>} />
           </Route>
         </Routes>
       </BrowserRouter>

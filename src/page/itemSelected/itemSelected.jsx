@@ -4,11 +4,58 @@ import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import ReserveTime from "../../component/itemSelect/reserveTime";
 
 const ItemSelected = () => {
     const location = useLocation();
     const { data } = location.state;
-    
+    const data2 = [
+        {
+            id: 1,
+            time: '17:00 - 18:00 ',
+            price: '150000 ریال'
+        },
+        {
+            id: 2,
+            time: '17:00 - 18:00 ',
+            price: '150000 ریال'
+        },
+        {
+            id: 3,
+            time: '17:00 - 18:00 ',
+            price: '150000 ریال'
+        },
+        {
+            id: 4,
+            time: '17:00 - 18:00 ',
+            price: '150000 ریال'
+        },
+        {
+            id: 5,
+            time: '17:00 - 18:00 ',
+            price: '150000 ریال'
+        },
+        {
+            id: 6,
+            time: '17:00 - 18:00 ',
+            price: '150000 ریال'
+        },
+        {
+            id: 7,
+            time: '17:00 - 18:00 ',
+            price: '150000 ریال'
+        },
+        {
+            id: 8,
+            time: '17:00 - 18:00 ',
+            price: '150000 ریال'
+        },
+    ];
+    const itemData = data2.map((data2) => {
+        return (
+            <ReserveTime data2={data2} key={data2.id}/>
+        )
+    })
     return (
         <>
             <div className="itemHeader"><p>لطفا روز مورد نظرتان را انتخاب کنید</p></div>
@@ -28,46 +75,7 @@ const ItemSelected = () => {
                     <div className="itemsHeader">فروردین 1401 : سانس اختصاصی 12</div>
                     <div className="cards">
                         <div className="row">
-                            <div className="card">
-                                <span>17:00 - 18:00 </span>
-                                برای رزرو کلیک کنید
-                                <span>هزیه:150000 ریال</span>
-                            </div>
-                            <div className="card">
-                                <span>17:00 - 18:00 </span>
-                                برای رزرو کلیک کنید
-                                <span>هزیه:150000 ریال</span>
-                            </div>
-                            <div className="card">
-                                <span>17:00 - 18:00 </span>
-                                برای رزرو کلیک کنید
-                                <span>هزیه:150000 ریال</span>
-                            </div>
-                            <div className="card">
-                                <span>17:00 - 18:00 </span>
-                                برای رزرو کلیک کنید
-                                <span>هزیه:150000 ریال</span>
-                            </div>
-                            <div className="card">
-                                <span>17:00 - 18:00 </span>
-                                برای رزرو کلیک کنید
-                                <span>هزیه:150000 ریال</span>
-                            </div>
-                            <div className="card">
-                                <span>17:00 - 18:00 </span>
-                                برای رزرو کلیک کنید
-                                <span>هزیه:150000 ریال</span>
-                            </div>
-                            <div className="card">
-                                <span>17:00 - 18:00 </span>
-                                برای رزرو کلیک کنید
-                                <span>هزیه:150000 ریال</span>
-                            </div>
-                            <div className="card">
-                                <span>17:00 - 18:00 </span>
-                                برای رزرو کلیک کنید
-                                <span>هزیه:150000 ریال</span>
-                            </div>
+                            {itemData}
                         </div>
                     </div>
                     <hr />

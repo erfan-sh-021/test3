@@ -5,9 +5,9 @@ import CardView from '../../component/itemSelect/cardView.jsx';
 
 const Reservation = ({props}) => {
     // console.log(props)
-    const list = props.map((data,index) => {
+    const list = props.map((data) => {
         return (
-            <CardView data={{data}} />
+            <CardView data={data} key={data.id}/>
         )
     })
     return (

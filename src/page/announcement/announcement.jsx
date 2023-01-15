@@ -35,7 +35,7 @@ const data = [
 const Announcement = () => {
     const ListData = data.map((dataList) => {
         // console.log(dataList)
-        return <AnCard data={dataList} />
+        return <AnCard data={dataList} key={dataList.id}/>
     })
     return (
         <>

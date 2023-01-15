@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const CardView = ({ data }) => {
+    // console.log(data.data)
     const [width, setWidth] = useState(window.innerWidth);
     useEffect(() => {
         const iconMenu = document.querySelector('.icon-menu');
@@ -13,17 +14,18 @@ const CardView = ({ data }) => {
 
     }, []);
     return (
-        <div className="card " key={data.id}>
-            <img src={data.imageUrl} className="card-img-top " alt="..." />
-            <Link to={'/itemSelected'} state={{ data: data }}>
-                <div className={`${width < 769 ? 'card-img-overlay' : 'card-body'}`}>
-                    <h5 className="card-title">{data.title}</h5>
-                    <Link to={'/itemSelected'} state={{ data: data }}>
-                        <button href="#" className="btn btn-primary " >رزرو</button>
-                    </Link>
-                </div>
-            </Link>
-        </div>
+            <div className="card">
+                <img src={data.imageUrl} className="card-img-top " alt="..." />
+                <Link to={'/itemSelected'} state={{ data: data }}>
+                    <div className={`${width < 769 ? 'card-img-overlay' : 'card-body'}`}>
+                        <h5 className="card-title">{data.title}</h5>
+                        <Link to={'/itemSelected'} state={{ data: data }}>
+                            <button href="#" className="btn btn-primary " >رزرو</button>
+                        </Link>
+                    </div>
+                </Link>
+            </div>
+
     );
 }
 
