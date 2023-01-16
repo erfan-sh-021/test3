@@ -375,11 +375,12 @@
 @media only screen and (min-width: 1025px) {
     .leftItem {
         float: left;
+        width: 30%;
     }
 
     .rightItem {
         float: right;
-        width: 70%;
+        width: 65%;
         margin-top: 40px;
         background: white;
         border-radius: 10px;
@@ -462,9 +463,12 @@
 }
 
 @media only screen and (min-width: 1441px) {
+    .rightItem{
+        width: 68%;
+    }
     .cards {
         .card {
-            font-size: 21px;
+            font-size: 19px;
             width: 13% !important;
             padding: 10px !important;
         }
@@ -482,15 +486,15 @@
         width: 340px;
     }
     .rmdp-day{
-        width: 70px !important;
-        height: 70px !important;
+        width: 55px !important;
+        height: 55px !important;
         .sd{
         font-size: 22px;
         }
     }
     .rmdp-week-day{
-        width: 70px !important;
-        height: 70px !important;
+        width: 55px !important;
+        height: 55px !important;
         font-size: 20px !important;
 
     }

@@ -33,20 +33,18 @@ const data = [
     },
 ]
 const Announcement = () => {
-    const ListData = data.map((dataList) => {
-        // console.log(dataList)
-        return <AnCard data={dataList} key={dataList.id}/>
-    })
     return (
         <>
             <div className="an-main">
-                    <div className="a-right">
-                        <ul className="announceList">
-                            {ListData}
-                        </ul>
-                    </div>
+                <div className="a-right">
+                    <ul className="announceList">
+                        {data.map((dataList) => {
+                            return <AnCard data={dataList} key={dataList.id} />
+                        })}
+                    </ul>
+                </div>
                 {/* <div className="a-left">
-                    <AnDetails/>
+
                 </div> */}
             </div>
         </>

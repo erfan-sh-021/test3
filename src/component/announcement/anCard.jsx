@@ -2,6 +2,7 @@ import { useState } from 'react';
 import AnDetails from '../../page/announcement/anDetails';
 const AnCard = ({ data }) => {
     const [showModal, setShowModal] = useState(false);
+    
     return (
         <>
             <li className='an-li'>
@@ -13,7 +14,7 @@ const AnCard = ({ data }) => {
                     <p className="overflow-hidden">{data.desc}</p>
                 </div>
             </li>
-            {showModal && <AnDetails data={data} onClose={()=>setShowModal(false)}/>}
+            { showModal && <AnDetails data={data} onClose={()=>setShowModal(false)}/>}
         </>
     );
 }

@@ -9,9 +9,10 @@
 .announceList {
     height: 100%;
     .an-li {
+        padding-right: 10px;
         cursor: pointer;
         height: 100px;
-        margin: 10px;
+        margin-bottom: 10px;
         direction: rtl;
         display: flex;
         flex-direction: row;

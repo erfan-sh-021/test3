@@ -4,13 +4,12 @@ const AnDetails = ({ data , onClose}) => {
             <img src={data.src} alt="" />
             <div className="an-text">
                 <div className="an-top">
-                <p className="an-p">{data.title}</p>
                 <p className="an-p">{data.desc}</p>
                     
                 </div>
                 <div className="an-bottom">
-                    <p>مکان : <span>بال غربی</span></p>
                     <p>زمان : <span>به قسمت رزرو مراجعه کنید</span></p>
+                    <p>مکان : <span>بال غربی</span></p>
                 </div>
 
             </div>
