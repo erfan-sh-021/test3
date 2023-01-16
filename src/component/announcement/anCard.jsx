@@ -1,19 +1,19 @@
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import AnDetails from '../../page/announcement/anDetails';
 const AnCard = ({ data }) => {
-    // console.log(data)
+    const [showModal, setShowModal] = useState(false);
     return (
         <>
-            <Link to={'/anDetails'} state={data}>
-                <li className='an-li'>
-                    <div className="an-right">
-                        <img src={data.src} alt="" />
-                    </div>
-                    <div className="an-left">
-                        <h4>اطلاعیه : {data.title}</h4>
-                        <p className="overflow-hidden">{data.desc}</p>
-                    </div>
-                </li>
-            </Link>
+            <li className='an-li'>
+                <div className="an-right">
+                    <img src={data.src} alt="" />
+                </div>
+                <div className="an-left" onClick={() => setShowModal(true)}>
+                    <h4>اطلاعیه : {data.title}</h4>
+                    <p className="overflow-hidden">{data.desc}</p>
+                </div>
+            </li>
+            {showModal && <AnDetails data={data} onClose={()=>setShowModal(false)}/>}
         </>
     );
 }

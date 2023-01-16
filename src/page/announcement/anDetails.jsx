@@ -1,15 +1,12 @@
-import { Link, useLocation } from "react-router-dom";
-
-const AnDetails = () => {
-    const location = useLocation();
-    const data = location.state;
-    // console.log(dataList);
+const AnDetails = ({ data , onClose}) => {
     return (
         <div className="an-details">
             <img src={data.src} alt="" />
             <div className="an-text">
                 <div className="an-top">
-                    <p className="an-p">{data.desc}</p>
+                <p className="an-p">{data.title}</p>
+                <p className="an-p">{data.desc}</p>
+                    
                 </div>
                 <div className="an-bottom">
                     <p>مکان : <span>بال غربی</span></p>
@@ -17,9 +14,7 @@ const AnDetails = () => {
                 </div>
 
             </div>
-            <Link to={'/announcement'}>
-                <button className="btn">بازگشت</button>
-            </Link>
+            <button className="btn" onClick={onClose}>بازگشت</button>
         </div>
     );
 }

@@ -45,9 +45,9 @@ const Announcement = () => {
                             {ListData}
                         </ul>
                     </div>
-                <div className="a-left">
-                    {/* <AnDetails/> */}
-                </div>
+                {/* <div className="a-left">
+                    <AnDetails/>
+                </div> */}
             </div>
         </>
     );

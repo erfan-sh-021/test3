@@ -60,7 +60,7 @@
         margin-top: 15px !important;
         padding: 0 !important;
         width: 10rem !important;
-        margin: 10px 5px 5px 5px;
+        margin: 20px 5px 5px 5px !important;
         text-align: center;
         border: none !important;
     }
@@ -85,6 +85,24 @@
     .row {
         justify-content: center;
         width: 100%;
+    }
+}
+@media only screen and (min-width: 1441px) {
+    .card{
+        width: 350px !important;
+        margin: 40px 5px 5px 25px !important;
+        img{
+            height: 250px;
+        }
+        h5{
+            font-size: 25px;
+
+        }
+        button{
+            height: 55px;
+            font-size: 25px;
+            margin: 21px 0px;
+        }
     }
 }
 

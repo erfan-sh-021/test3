@@ -8,24 +8,24 @@
 
 .announceList {
     height: 100%;
-    padding-left: 0;
-
     .an-li {
+        cursor: pointer;
         height: 100px;
-        margin-bottom: 10px;
+        margin: 10px;
         direction: rtl;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        &:hover{
+            background-color: #adadad;
+        }
     }
 }
 
 .a-right {
     height: 100%;
-    padding: 0 10px;
     background: white;
-    padding-top: 10px;
 
     img {
         width: 85px;
@@ -76,14 +76,13 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+      
         }
     }
 
     .a-right {
-        height: 100%;
-        padding: 0 10px;
+        height: 100%;   
         background: white;
-        padding-top: 10px;
         height: 100%;
 
         img {
@@ -129,6 +128,7 @@
     .a-left {
         display: block;
     }
+
     .a-right {
         width: 47%;
         float: right;
@@ -145,11 +145,13 @@
         border-radius: 10px;
         background: white;
     }
-    .an-left{
-        h4{
+
+    .an-left {
+        h4 {
             font-size: 13px;
         }
-        p{
+
+        p {
             font-size: 12px;
             height: 59px;
         }
@@ -157,16 +159,19 @@
 }
 
 @media only screen and (min-width: 1441px) {
-    .an-left{
+    .an-left {
         height: 125px;
-        h4{
+
+        h4 {
             font-size: 22px;
         }
-        p{
+
+        p {
             font-size: 20px;
             height: 100%;
         }
     }
+
     .a-right {
         img {
             width: 140px;
@@ -175,7 +180,7 @@
         }
     }
 
-    .an-li{
+    .an-li {
         height: 160px !important;
     }
 }
