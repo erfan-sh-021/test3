@@ -5,9 +5,9 @@ import AnDetails from './anDetails'
 
 const Announcement = ({data}) => {
     const [showModal, setShowModal] = useState(false);
-    const [showRight, setShowRight] = useState(true);
-    const[anData,setAnData]=useState('');
-    // console.log(anData);
+    const [anData,setAnData]=useState('');
+    // const [showRight, setShowRight] = useState(true);
+    console.log(anData);
     
     return (
         <>
@@ -15,13 +15,12 @@ const Announcement = ({data}) => {
                <div className="a-right">
                     <ul className="announceList">
                         {data.map((dataList) => {
-                            // setAnData(dataList);
-                            return <AnCard data={dataList} key={dataList.id} setShowModal={setShowModal} setAnData={setAnData} setShowRight={setShowRight}/>
+                            return <AnCard data={dataList} key={dataList.id} setShowModal={setShowModal} setAnData={setAnData} />
                         })}
                     </ul>
                 </div>
                 <div className="a-left">
-                     {showModal&&<AnDetails data={data} onClose={() => setShowModal(false)} />}
+                     {showModal&&<AnDetails data={anData} onClose={() => setShowModal(false)} />}
                 </div>
             </div>
         </>
