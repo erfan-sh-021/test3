@@ -1,9 +1,11 @@
 const AnDetails = ({ data , onClose}) => {
+    console.log(data);
     return (
         <div className="an-details">
             <img src={data.src} alt="" />
             <div className="an-text">
                 <div className="an-top">
+                <p className="an-p">{data.title}</p>
                 <p className="an-p">{data.desc}</p>
                     
                 </div>

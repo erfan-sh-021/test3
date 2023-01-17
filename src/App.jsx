@@ -1,6 +1,6 @@
 import Layout from './component/layout/layout';
 import './assets/scss/main.scss';
-
+import './assets/img/react.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Reservation from './page/reservation/reservation';
@@ -11,8 +11,38 @@ import ResevtionDate from './page/resevtionDate/resevtionDate';
 import Announcement from './page/announcement/announcement';
 import AnDetails from './page/announcement/anDetails';
 function App() {
-const[apiData,setApiData]=useState([]);
 
+const data = [
+  {
+      id: 1,
+      title: 'استخر مجتمع 1',
+      desc: `پس از مدت ها انتظار استخر مجموعه قابل استفاده شد و میتونید به راحتی رزرو کرده و برید استخر آب بازی و اینا
+      شایان به ذکر است استخر در حالت عمومی و خصوصی ... قابل رزرو است برای دیدن اطلاعات بیشتر به قسمت رزرو در آینه یا همین پنل مراجعه کنید`,
+      src: require('./assets/img/react.png')
+  },
+  {
+      id: 2,
+      title: 'استخر مجتمع 2',
+      desc: `پس از مدت ها انتظار استخر مجموعه قابل استفاده شد و میتونید به راحتی رزرو کرده و برید استخر آب بازی و اینا
+      شایان به ذکر است استخر در حالت عمومی و خصوصی ... قابل رزرو است برای دیدن اطلاعات بیشتر به قسمت رزرو در آینه یا همین پنل مراجعه کنید`,
+      src: require('./assets/img/react.png')
+  },
+  {
+      id: 3,
+      title: 'استخر مجتمع 3',
+      desc: `پس از مدت ها انتظار استخر مجموعه قابل استفاده شد و میتونید به راحتی رزرو کرده و برید استخر آب بازی و اینا
+      شایان به ذکر است استخر در حالت عمومی و خصوصی ... قابل رزرو است برای دیدن اطلاعات بیشتر به قسمت رزرو در آینه یا همین پنل مراجعه کنید`,
+      src: require('./assets/img/react.png')
+  },
+  {
+      id: 4,
+      title: 'استخر مجتمع 4',
+      desc: `پس از مدت ها انتظار استخر مجموعه قابل استفاده شد و میتونید به راحتی رزرو کرده و برید استخر آب بازی و اینا
+      شایان به ذکر است استخر در حالت عمومی و خصوصی ... قابل رزرو است برای دیدن اطلاعات بیشتر به قسمت رزرو در آینه یا همین پنل مراجعه کنید`,
+      src: require('./assets/img/react.png')
+  },
+];
+const[apiData,setApiData]=useState([]);
 // console.log(apiData)
 const url ='https://pbmapi.pardikiot.com/api/ServiceTypes/GetMirrorServiceTypes';
 const config = {
@@ -37,7 +67,7 @@ useEffect(()=>{
             <Route path='resevtion' element={<Reservation props={apiData}/>} ></Route>
             <Route path='itemSelected' element={<ItemSelected props={apiData}/>} />
             <Route path='reservationDate' element={<ResevtionDate/>} />
-            <Route path='announcement' element={<Announcement/>} ></Route>
+            <Route path='announcement' element={<Announcement data={data}/>} ></Route>
             <Route path='anDetails' element={<AnDetails/>} />
           </Route>
         </Routes>
