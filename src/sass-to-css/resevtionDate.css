@@ -1,0 +1,87 @@
+.mainDate {
+    height: 100%; }
+  
+  @media only screen and (max-width: 768px) {
+    .dateHeader {
+      background: black;
+      color: white;
+      border-radius: 8px;
+      font-size: 16px;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center; }
+    .resevtionItem {
+      background: white;
+      background: linear-gradient(148deg, white 0%, #fff3e2 50%, #eff5ff 100%);
+      height: 240px; }
+      .resevtionItem p {
+        text-align: center;
+        width: 174px;
+        display: block;
+        margin: 0 auto;
+        padding: 14px 0; }
+    .reserveCart {
+      background: white;
+      height: 140px;
+      width: 100%; }
+    .reserveTime {
+      height: 350px;
+      background: #2b5af3;
+      margin-bottom: 40px;
+      width: 80%;
+      height: 65%;
+      margin-top: 7%; }
+    .reservationBottom {
+      height: 435px;
+      background: #bbbbbb;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+    .reserveBotton {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-bottom: 10px; }
+      .reserveBotton button {
+        color: white;
+        font-size: 12px;
+        width: 110px;
+        border-radius: 10px !important; }
+      .reserveBotton button:nth-child(1) {
+        background: black; }
+      .reserveBotton button:nth-child(2) {
+        background: #05C0E6; }
+    .reserveCart {
+      overflow-x: scroll; }
+    .resevtionItem .card {
+      text-align: center;
+      border: none !important;
+      background: #05C0E6 !important;
+      color: white;
+      font-size: 16px;
+      min-width: 143px;
+      max-height: 116px;
+      padding: 5px !important; }
+    .resevtionItem .row {
+      flex-wrap: nowrap !important;
+      justify-content: flex-start !important;
+      align-items: center !important; } }
+  
+  @media only screen and (min-width: 376px) and (max-width: 768px) {
+    .reserveBotton button {
+      font-size: 15px;
+      width: 130px; } }
+  
+  @media only screen and (min-width: 769px) {
+    .dateHeader {
+      display: none; }
+    .resevtionItem {
+      display: none; }
+    .reservationBottom {
+      display: none; } }
+  

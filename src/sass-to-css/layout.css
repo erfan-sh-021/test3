@@ -1,0 +1,191 @@
+.active {
+    display: block !important; }
+  
+  .deactive {
+    display: none !important; }
+  
+  .background {
+    background: white;
+    background: linear-gradient(148deg, white 0%, #fff3e2 50%, #eff5ff 100%); }
+  
+  .selected {
+    color: #05C0E6 !important; }
+  
+  .unSelected {
+    color: #707070 !important; }
+  
+  .page {
+    width: 100%;
+    height: 100%; }
+  
+  @media only screen and (max-width: 768px) {
+    .left {
+      background: white;
+      background: linear-gradient(148deg, white 0%, #fff3e2 50%, #eff5ff 100%);
+      height: 100%; }
+    .items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 15px; }
+      .items a {
+        text-decoration: none !important; }
+      .items .li {
+        margin: 0 40px 18px 0;
+        font-size: 15px;
+        color: #707070; }
+        .items .li span {
+          font-size: 35px;
+          padding-left: 1.5rem; }
+      .items .exit {
+        color: #E605D0; }
+    .menuLogo > img {
+      width: 160px;
+      height: 80px;
+      display: block;
+      margin: 0 auto 10px auto; }
+    .menu {
+      width: 100%;
+      min-height: 100%; }
+    .navbarMenu {
+      background: #fff;
+      width: 100%;
+      height: 30px;
+      padding: 4px 0 0 7px; }
+    .user {
+      background: white;
+      background: linear-gradient(148deg, white 0%, #fff3e2 50%, #eff5ff 100%);
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      height: 70px; }
+      .user .icon-user {
+        font-size: 35px;
+        background: #05C0E6;
+        width: 55px;
+        display: flex;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        color: white;
+        margin: 0 32px 0 14px;
+        border: 1px solid #000; }
+      .user .userDetails {
+        text-align: center;
+        height: 47px; }
+        .user .userDetails h4 {
+          font-size: 17px; }
+        .user .userDetails p {
+          font-size: 11px; }
+      .user .card-group {
+        margin-top: 10px; } }
+  
+  @media only screen and (min-width: 1024px) {
+    .left {
+      width: 82%;
+      height: 100%;
+      float: left; }
+    .page {
+      background: white;
+      background: linear-gradient(148deg, white 0%, #fff3e2 50%, #eff5ff 100%); }
+    .navbarMenu {
+      display: none; }
+    .menu {
+      background: #fff;
+      float: right;
+      height: 100%;
+      width: 18%; }
+      .menu .menuItems {
+        min-height: 624px !important;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative; }
+    .menuLogo > img {
+      width: 100px;
+      height: 50px;
+      margin: 25px auto;
+      display: block; }
+    .items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 10px;
+      padding-left: 0; }
+      .items a {
+        text-decoration: none !important; }
+      .items .li {
+        margin: 0 23px 18px 0;
+        font-size: 12px;
+        color: #707070; }
+        .items .li span {
+          font-size: 30px;
+          padding-left: 1rem; }
+      .items .exit {
+        color: #E605D0; }
+    .user {
+      background: white;
+      background: linear-gradient(148deg, white 0%, #fff3e2 50%, #eff5ff 100%);
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      height: 70px;
+      width: 100%;
+      order: 2;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 30px; }
+      .user .icon-user {
+        font-size: 35px;
+        background: #05C0E6;
+        width: 45px;
+        display: flex;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        color: white;
+        margin: 0 32px 0 14px;
+        border: 1px solid #000; }
+      .user .userDetails {
+        text-align: center;
+        height: 47px; }
+        .user .userDetails h4 {
+          font-size: 15px; }
+        .user .userDetails p {
+          font-size: 11px; } }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .menu {
+      width: 17%; }
+    .left {
+      width: 83%; } }
+  
+  @media only screen and (min-width: 1441px) {
+    .menu {
+      width: 19%; }
+    .left {
+      width: 81%; }
+    .li {
+      font-size: 23px !important;
+      margin: 0 52px 50px 0 !important; }
+      .li span {
+        font-size: 55px !important; }
+    .menuLogo img {
+      width: 150px;
+      height: 80px; }
+    .userDetails h4 {
+      font-size: 21px !important; }
+    .userDetails p {
+      font-size: 17px !important; }
+    .user {
+      height: 100px; }
+    .icon-user {
+      margin: 0 53px 0 14px !important; } }
+  
